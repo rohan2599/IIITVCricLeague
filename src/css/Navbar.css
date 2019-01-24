@@ -1,0 +1,40 @@
+.logoImg {
+  width: 50px;
+  margin-left: 100%;
+  border-radius: 10%;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  -ms-transition: -ms-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+
+.logoImg:hover {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.navbar {
+  font: 16px/1.7 "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-size: 16px;
+  display: flex;
+  background-color: rgb(2, 2, 2);
+}
+
+.navbar-nav {
+  margin-right: 120px;
+}
+#nav_item_color {
+  color: #e2a453;
+}
+
+#nav_item_color:hover {
+  color: white;
+  font-size: 17px;
+}
