@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/dashbord/Navbar";
 import { Route } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./components/dashbord/Home";
 import "./App.css";
 import ForRegistration from "./components/registration/forRegistration";
 import RegisterOwner from "./components/registration/registerOwner";
