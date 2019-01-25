@@ -1,29 +1,21 @@
 import React, { Component } from "react";
-import logo from "../image/logo_1.png";
-import "../css/Navbar.css";
+import logo from "../../image/logo_1.png";
+import "../../css/Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 class Navbar extends Component {
   state = {
     width: 50
   };
-  handlelogo = () => {
-    let width = this.state.width;
-    this.setState({
-      width: width + "500px"
-    });
-  };
+
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-          <Link to="/" className="navbar-brand">
-            <img
-              src={logo}
-              alt="cricLogo"
-              className="logoImg"
-              onMouseMove={this.handlelogo}
-            />
-          </Link>
+          <div className="collapse navbar-collapse" id="collapsibleNavbar">
+            <Link to="/" className="navbar-brand">
+              <img src={logo} alt="cricLogo" className="logoImg" />
+            </Link>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -40,17 +32,36 @@ class Navbar extends Component {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink to="/teams" className="nav-link" id="nav_item_color">
+                  Teams
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/fixtures"
+                  className="nav-link"
+                  id="nav_item_color"
+                >
+                  Fixtures
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/results" className="nav-link" id="nav_item_color">
+                  Results
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/status" className="nav-link" id="nav_item_color">
+                  Stats
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink
                   to="/register"
                   className="nav-link"
                   id="nav_item_color"
                 >
                   Register
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/teams" className="nav-link" id="nav_item_color">
-                  Teams
                 </NavLink>
               </li>
               <li className="nav-item">
