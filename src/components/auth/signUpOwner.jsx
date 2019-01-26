@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import Form from "./form";
 import { connect } from "react-redux";
-import { signUp } from "../../store/actions/authActions";
+import { SignUpOwner } from "../../store/actions/authActions";
 
 class signUpOwner extends Component {
   state = {
@@ -22,11 +22,10 @@ class signUpOwner extends Component {
     });
   };
 
-  handlefbStore = ({ data }) => {
-    signUp(data);
-  };
   render() {
-    const { authError } = this.props;
+    const { authError, SignUpOwner } = this.props;
+    const { data } = this.state;
+
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit}>
@@ -60,7 +59,7 @@ class signUpOwner extends Component {
               className="form-control"
             />
           </div>
-          <button className="btn btn-primary" onClick={this.handlefbStore}>
+          <button className="btn btn-primary" onClick={() => SignUpOwner(data)}>
             Register
           </button>
           <div className="center red-text">
@@ -80,7 +79,7 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = dispatch => {
   return {
-    signUp: creds => dispatch(signUp(creds))
+    SignUpOwner: creds => dispatch(SignUpOwner(creds))
   };
 };
 export default connect(
