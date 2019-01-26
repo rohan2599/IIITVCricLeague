@@ -1,4 +1,6 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
+import "firebase/firestore";
+import "firebase/auth";
 
 const config = {
   apiKey: "AIzaSyCehdntdWsQgDktn2vM7rg9IsHfav7OIaQ",
@@ -8,6 +10,10 @@ const config = {
   storageBucket: "cricket-1fa9b.appspot.com",
   messagingSenderId: "872981313255"
 };
-const fire = firebase.initializeApp(config);
 
-export default fire;
+firebase.initializeApp(config);
+
+firebase.firestore();
+firebase.auth();
+
+export default firebase;

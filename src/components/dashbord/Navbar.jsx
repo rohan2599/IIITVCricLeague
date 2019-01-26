@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import logo from "../../image/logo_1.png";
-import "../../css/Navbar.css";
+import logo from "../../static/image/logo_1.png";
+import "../../static/css/Navbar.css";
 import { Link, NavLink } from "react-router-dom";
+
 class Navbar extends Component {
   state = {
     width: 50
