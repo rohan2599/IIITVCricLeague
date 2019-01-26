@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import coverPhoto from "../../static/image/home_cover.jpg";
+import coverPhoto from "../../static/image/home.jpg";
 import "../../static/css/home.css";
 
 class Home extends Component {

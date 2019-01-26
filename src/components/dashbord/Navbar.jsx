@@ -11,12 +11,11 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-          <div className="collapse navbar-collapse" id="collapsibleNavbar">
-            <Link to="/" className="navbar-brand">
-              <img src={logo} alt="cricLogo" className="logoImg" />
-            </Link>
-          </div>
+        <nav className="navbar navbar-expand-md navbar-dark fixed-top">
+          <Link to="/" className="navbar-brand">
+            <img src={logo} alt="cricLogo" className="logoImg" />
+          </Link>
+
           <button
             className="navbar-toggler"
             type="button"

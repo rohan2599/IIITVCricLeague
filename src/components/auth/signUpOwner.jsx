@@ -1,51 +1,42 @@
 import React, { Component } from "react";
-// import Form from "./form";
 import { connect } from "react-redux";
 import { SignUpOwner } from "../../store/actions/authActions";
 
 class signUpOwner extends Component {
   state = {
-    data: { email: "", password: "", batch: "" }
+    name: "",
+    batch: ""
   };
 
   handleSubmit = e => {
     e.preventDefault();
     console.log(this.state);
+    this.props.SignUpOwner(this.state);
   };
 
-  handleChange = ({ currentTarget: input }) => {
-    const data = { ...this.state.data };
-
-    data[input.name] = input.value;
+  handleChange = e => {
     this.setState({
-      data
+      [e.target.id]: e.target.value
     });
   };
 
-  render() {
-    const { authError, SignUpOwner } = this.props;
-    const { data } = this.state;
+  styles = {
+    color: "grey",
+    textAlign: "center"
+  };
 
+  render() {
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit}>
+          <h5 style={this.styles}> Owner Registration Form</h5>
           <div className="form-group">
-            <label htmlFor="username">Username</label>
+            <label htmlFor="name">Player Name</label>
             <input
-              type="email"
+              type="name"
               onChange={this.handleChange}
-              id="email"
-              name="email"
-              className="form-control"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              onChange={this.handleChange}
-              id="password"
-              name="password"
+              id="name"
+              name="name"
               className="form-control"
             />
           </div>
@@ -59,30 +50,19 @@ class signUpOwner extends Component {
               className="form-control"
             />
           </div>
-          <button className="btn btn-primary" onClick={() => SignUpOwner(data)}>
-            Register
-          </button>
-          <div className="center red-text">
-            {authError ? <p>{authError}</p> : null}
-          </div>
+
+          <button className="btn btn-primary">Register</button>
         </form>
       </div>
     );
   }
 }
-
-const mapStateToProps = state => {
-  return {
-    auth: state.firebase.auth,
-    authError: state.auth.authError
-  };
-};
 const mapDispatchToProps = dispatch => {
   return {
-    SignUpOwner: creds => dispatch(SignUpOwner(creds))
+    SignUpOwner: player => dispatch(SignUpOwner(player))
   };
 };
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(signUpOwner);
