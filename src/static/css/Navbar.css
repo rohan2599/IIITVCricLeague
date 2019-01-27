@@ -1,5 +1,6 @@
 .logoImg {
   width: 50px;
+  height: 50px;
   margin-left: 100%;
   border-radius: 10%;
   -webkit-transition: -webkit-transform 0.8s ease-in-out;

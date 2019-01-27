@@ -1,0 +1,21 @@
+.footer {
+  background-color: #020000;
+  background-image: url(https://ttensports.com/wp-content/uploads/2018/09/T10-Slider-3.jpg);
+  background-position: center center;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 70px 0px 70px 0px;
+}
+
+.logo {
+  margin-left: 10%;
+  border-radius: 4%;
+  max-width: 150px;
+  max-height: 100px;
+}
+
+.content {
+  color: white;
+}
