@@ -1,0 +1,60 @@
+.stats-body {
+  background-color: black;
+}
+
+.title {
+  text-align: center;
+  margin-top: 10%;
+  color: white;
+  font: 32px/1.7 "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-size: 32px;
+  line-height: 1.7;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.loading {
+  text-align: center;
+  padding: 20%;
+}
+
+.thead {
+  color: rgb(234, 164, 60);
+}
+
+.tbody {
+  color: white;
+}
+
+.table th,
+td {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  font: 14px/1.7 "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: "Source Sans Pro", sans-serif;
+}

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import logo from "../../image/logo_1.png";
-import "../../css/Navbar.css";
+import logo from "../../static/image/logo_1.png";
+import "../../static/css/Navbar.css";
 import { Link, NavLink } from "react-router-dom";
+
 class Navbar extends Component {
   state = {
     width: 50
@@ -10,12 +11,11 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-          <div className="collapse navbar-collapse" id="collapsibleNavbar">
-            <Link to="/" className="navbar-brand">
-              <img src={logo} alt="cricLogo" className="logoImg" />
-            </Link>
-          </div>
+        <nav className="navbar navbar-expand-md navbar-dark fixed-top">
+          <Link to="/" className="navbar-brand">
+            <img src={logo} alt="cricLogo" className="logoImg" />
+          </Link>
+
           <button
             className="navbar-toggler"
             type="button"

@@ -1,6 +1,7 @@
 import React from "react";
-import "../../css/register.css";
+import "../../static/css/register.css";
 import { Link } from "react-router-dom";
+
 const ForRegistration = () => {
   return (
     <div className="container">
