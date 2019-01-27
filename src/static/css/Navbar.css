@@ -11,10 +11,12 @@
   transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
+  cursor: pointer;
 }
 
 .navbar {
   font: 17px/1.7 "Source Sans Pro", sans-serif;
+  height: 80px;
   font-style: normal;
   font-variant-ligatures: normal;
   font-variant-caps: normal;
@@ -25,6 +27,9 @@
   font-size: 17px;
   display: flex;
   background-color: rgb(2, 2, 2);
+}
+.navbar:hover {
+  background-color: rgb(34, 34, 34);
 }
 
 .navbar-nav {
