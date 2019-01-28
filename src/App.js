@@ -8,6 +8,7 @@ import signUpOwner from "./components/auth/signUpOwner";
 import signUpPlayer from "./components/auth/signUpPlayer";
 import { BrowserRouter } from "react-router-dom";
 import Stats from "./components/stats/stats";
+import Footer from "./components/dashbord/footer";
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
             <Route exact path="/register/player" component={signUpPlayer} />
             <Route exact path="/status" component={Stats} />
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
     );
