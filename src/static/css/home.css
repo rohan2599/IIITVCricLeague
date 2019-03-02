@@ -1,5 +1,53 @@
-.coverPhoto {
-  max-width: 100%;
-  height: auto;
-  margin: 5% 0 0 0;
+.coverphoto {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transform: translateY(-14em);
+  z-index: -100;
+}
+
+.frontpageimage {
+  z-index: 100;
+  position: absolute;
+  transform: translateY(-9.5em);
+  margin-left: 1.5%;
+}
+
+.coverphoto-wrapper::after {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-14em);
+  z-index: -50;
+}
+
+.flc {
+  margin: 8% 0 0 50%;
+  position: absolute;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 5em;
+}
+
+.flc > span {
+  color: #09c0f7;
+}
+
+.register--button {
+  position: absolute;
+  display: inline-block;
+  margin: 16% 0 0 81%;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  font: 1.4em/100% Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 0.5em 2em 0.55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #d9eef7;
+  border: solid 1px #0076a3;
+  background: #0095cd;
+  letter-spacing: 0.325px;
 }

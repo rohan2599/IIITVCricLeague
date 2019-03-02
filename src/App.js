@@ -23,7 +23,7 @@ class App extends Component {
             <Route exact path="/register/player" component={signUpPlayer} />
             <Route exact path="/status" component={Stats} />
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </BrowserRouter>
     );
