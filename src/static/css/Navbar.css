@@ -1,16 +1,19 @@
 .nav {
-  background-color: black;
-  opacity: 0.6;
   color: white;
-  padding: 1vh 1vh 0 1vh;
-  font-family: "Anton";
+  padding: 2vh 1vh 0 1vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   outline: none;
-  height: 4.5em;
+  height: 7em;
+  letter-spacing: 0.3175px;
+  z-index: 100;
 }
 .nav--left {
-  width: 45%;
+  width: 40%;
   font-weight: 700;
-  padding: 0.2vh 3vh;
+  padding: 0.2vh 0vh 0.2vh 3vh;
+}
+.cl > h1 {
+  font-size: 3.7em;
 }
 .cl {
   text-align: center;
@@ -19,21 +22,22 @@
 .navLeft--underline {
   width: 100%;
   background-color: white;
-  height: 0.3vh;
+  height: 0.1vh;
   margin: 0 auto;
 }
 .nav--left h1 span {
   color: #09c0f7;
 }
 .nav--logo {
-  width: 10%;
-  padding-top: 0.5em;
+  width: 20%;
+  margin-top: 2.7em;
+  text-align: center;
 }
 
 .nav--right {
-  width: 45%;
-  padding: 1vh 3vh;
-  margin-top: 2vh;
+  width: 40%;
+  padding: 1vh 2vh 1vh 0vh;
+  margin-top: 5.7vh;
 }
 
 .navlink {
@@ -41,8 +45,8 @@
 }
 .navlink > li {
   float: left;
-  padding: 0 5vh;
-  font-size: 1em;
+  padding: 0 3vh;
+  font-size: 1.25em;
 }
 
 .nav--right span {
@@ -52,6 +56,6 @@
 .navRight--underline {
   width: 100%;
   background-color: white;
-  height: 0.3vh;
+  height: 0.1vh;
   margin-top: 2.3em;
 }

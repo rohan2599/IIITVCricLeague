@@ -21,17 +21,17 @@ class Navbar extends Component {
             <div className="navLeft--underline" />
           </div>
           <div className="nav--logo">
-            <img className="logo" src={logo} alt="Cric logo" />
+            <img style={{ height: "25vh" }} src={logo} alt="Cric logo" />
           </div>
 
           <div className="nav--right">
             <ul className="navlink">
               <li>
-                <span>HOME</span>
+                <span>Home</span>
               </li>
-              <li>FIXTURES</li>
-              <li>REGISTER</li>
-              <li>CONTACT</li>
+              <li>Fixtures</li>
+              <li>Register</li>
+              <li>Contact</li>
             </ul>
             <div className="navRight--underline" />
           </div>
