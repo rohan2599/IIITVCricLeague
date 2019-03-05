@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import logo from "../../static/image/logo_cric.png";
 import "../../static/css/Navbar.css";
-import { Link, NavLink } from "react-router-dom";
 
 class Navbar extends Component {
-  state = {
-    width: 50
-  };
+  // state = {
+  //   width: 50
+  // };
 
   render() {
     return (
@@ -21,7 +20,7 @@ class Navbar extends Component {
             <div className="navLeft--underline" />
           </div>
           <div className="nav--logo">
-            <img style={{ height: "25vh" }} src={logo} alt="Cric logo" />
+            <img className="cric--logo" src={logo} alt="Cric logo" />
           </div>
 
           <div className="nav--right">
