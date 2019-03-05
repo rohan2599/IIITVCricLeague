@@ -1,32 +1,29 @@
 import React, { Component } from "react";
 import "../../static/css/home.css";
-import coverphoto from "../../static/image/coverphoto1.jpg";
 import image from "../../static/image/frontpageimage.png";
+import Navbar from "./Navbar";
+import About from "../about/about";
 
 class Home extends Component {
   render() {
     return (
-      <React.Fragment>
-        <div className="coverphoto-wrapper">
-          <img className="coverphoto" src={coverphoto} alt="IIITV" />
-          <img className="frontpageimage" src={image} alt="Cricketer" />
+      <div className="ContDiv">
+        <div className="header">
+          <Navbar />
         </div>
-        <h1 className="flc">
-          FIRST LOVE <span>CRICKET</span>
-        </h1>
-        <button className="register--button">Register</button>
-
-        {/* <div className="about--league">
-          <h1>About The Cricket League</h1>
-          <p>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            ullam voluptates numquam natus in fugiat voluptatem fugit commodi
-            mollitia tenetur dolorem non debitis, rerum officia, amet excepturi
-            quidem omnis vel?{" "}
+        <div className="homepage">
+          <img className="frontpageimage" src={image} alt="Cricketer" />
+          <p className="flc">
+            FIRST LOVE{" "}
+            <span>
+              CRICKET <button className="register--button">Register</button>
+            </span>
           </p>
-        </div> */}
-      </React.Fragment>
+        </div>
+        <div className="about">
+          <About />
+        </div>
+      </div>
     );
   }
 }
