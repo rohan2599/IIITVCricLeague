@@ -1,61 +1,59 @@
-.stats-body {
-  background-color: black;
+.image {
+  width: 20%;
+  /* padding: 2vmin; */
+  height: 10%;
 }
 
-.title {
+.pic {
+  width: 10vmin;
+}
+
+.player--card {
+  background-image: linear-gradient(rgb(191, 190, 190), rgb(191, 190, 190));
+  width: 15%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  /* text-align: center; */
+  display: inline-block;
+  margin-top: 7vh;
+  margin-right: 2vw;
+}
+.card--details {
+  /* padding: 1vmin; */
+  margin-left: 2vw;
+  padding-top: 3vh;
+}
+
+.card--details > h6 {
+  font-size: 2vmin;
+  text-align: left;
+}
+.card--details > h4 {
+  font-size: 3vmin;
+  padding-top: 2vh;
+  text-align: left;
+}
+
+.card--upperline {
+  height: 1px;
+  margin-top: 6vh;
+  background-color: gray;
   text-align: center;
-  margin-top: 10%;
-  color: white;
-  font: 32px/1.7 "Source Sans Pro", sans-serif;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-variant-east-asian: normal;
-  font-weight: 700;
-  font-stretch: normal;
-  font-size: 32px;
-  line-height: 1.7;
-  font-family: "Source Sans Pro", sans-serif;
+  width: 100%;
 }
 
-.loading {
-  text-align: center;
-  padding: 20%;
-  color: white;
+.cardHeading--rot {
+  font-size: 4vmin;
+  letter-spacing: 0.3175px;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform: rotateZ(90deg) translate(8vh, 35vw);
+  /* margin-top: 3vmin; */
 }
-
-.thead {
-  color: rgb(234, 164, 60);
-}
-
-.tbody {
-  color: white;
-}
-
-.table th,
-td {
-  border: 1px solid #333;
-  padding: 5px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: inherit;
-}
-
-.table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  -webkit-border-horizontal-spacing: 0px;
-  -webkit-border-vertical-spacing: 0px;
-  font: 14px/1.7 "Source Sans Pro", sans-serif;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-variant-east-asian: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  font-family: "Source Sans Pro", sans-serif;
+.cardUnderline--rot {
+  width: 21vh;
+  background-color: gray;
+  height: 2px;
+  margin-top: 0;
+  transform: translate(44vw);
 }

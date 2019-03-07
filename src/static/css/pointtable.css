@@ -1,0 +1,42 @@
+.contDiv {
+  background-color: black;
+}
+.loading {
+  padding: 2.5vmin;
+  margin-top: 20vh;
+  margin-left: 45vw;
+}
+
+.thead {
+  color: rgb(234, 164, 60);
+}
+
+.tbody {
+  color: white;
+}
+
+.table th,
+td {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 2vmin;
+  line-height: 1.7;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}

@@ -1,0 +1,59 @@
+.image {
+  width: 20%;
+  /* padding: 2vmin; */
+  height: 10%;
+}
+
+.pic {
+  width: 10vmin;
+}
+
+.player--card {
+  background-image: linear-gradient(rgb(191, 190, 190), rgb(191, 190, 190));
+  width: 15%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  /* text-align: center; */
+  display: inline-block;
+  margin-top: 7vh;
+  margin-right: 2vw;
+}
+.card--details {
+  /* padding: 1vmin; */
+  margin-left: 2vw;
+  padding-top: 3vh;
+}
+
+.card--details > h6 {
+  font-size: 2vmin;
+  text-align: left;
+}
+.card--details > h4 {
+  font-size: 3vmin;
+  padding-top: 2vh;
+  text-align: left;
+}
+
+.card--upperline {
+  height: 1px;
+  margin-top: 6vh;
+  background-color: gray;
+  text-align: center;
+  width: 100%;
+}
+
+.cardHeadingTeam--rot {
+  font-size: 4vmin;
+  letter-spacing: 0.3175px;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform: rotateZ(90deg) translate(8vh, 35vw);
+  z-index: 100;
+  /* margin-top: 3vmin; */
+}
+.cardUnderlineTeam--rot {
+  width: 25vh;
+  background-color: gray;
+  height: 2px;
+  margin-top: 0;
+}
