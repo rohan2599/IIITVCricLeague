@@ -1,63 +1,235 @@
 import React, { Component } from "react";
-import { firestoreConnect } from "react-redux-firebase";
-import { compose } from "redux";
-import { connect } from "react-redux";
+import makeCarousel from "react-reveal/makeCarousel";
+import Slide from "react-reveal/Slide";
+import styled, { css } from "styled-components";
 import "../../static/css/stats.css";
+import img1 from "../../static/image/a1.png";
+
+const width = "100%",
+  height = "60vmin";
+const Container = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: ${width};
+  background-image: linear-gradient(rgb(233, 233, 233), rgb(233, 233, 233));
+  text-align: center;
+`;
+const Children = styled.div`
+  width: ${width};
+  position: relative;
+  height: ${height};
+`;
+const Arrow = styled.div`
+  text-shadow: 1px 1px 1px black;
+  z-index: 100;
+  line-height: ${height};
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 10%;
+  font-size: 3em;
+  cursor: pointer;
+  user-select: none;
+  ${props =>
+    props.right
+      ? css`
+          left: 90%;
+        `
+      : css`
+          left: 0%;
+        `}
+`;
+const Dot = styled.span`
+  font-size: 1.5em;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #fff;
+  user-select: none;
+`;
+const Dots = styled.span`
+  text-align: center;
+  width: ${width};
+  z-index: 100;
+`;
+const Slider1 = ({ position, total, handleClick, children }) => (
+  <Container>
+    <div className="cardHeading--rot">
+      STATI<span>STICS</span>
+      <div className="cardUnderline--rot" />
+    </div>
+    <Children>
+      {children}
+      <Arrow onClick={handleClick} data-position={position - 1}>
+        {"<"}
+      </Arrow>
+      <Arrow right onClick={handleClick} data-position={position + 1}>
+        {">"}
+      </Arrow>
+    </Children>
+    <Dots>
+      {Array(...Array(total)).map((val, index) => (
+        <Dot key={index} onClick={handleClick} data-position={index}>
+          {index === position ? "● " : "○ "}
+        </Dot>
+      ))}
+    </Dots>
+  </Container>
+);
+const Carousel = makeCarousel(Slider1);
+
 class Stats extends Component {
   render() {
-    const { stats } = this.props;
-    // console.log("stats", stats);
-    if (!stats) {
-      return <h5 className="loading">Loading...</h5>;
-    } else {
-      return (
-        <React.Fragment>
-          <div className="container">
-            <h1 className="title"> League Table - 2019</h1>
-            <div className="table-responsive-md">
-              <table className="table table-hover table-bordered">
-                <thead>
-                  <tr className="thead">
-                    <th style={{ width: "250px" }} col="row">
-                      TEAM
-                    </th>
-                    <th col="row">M</th>
-                    <th col="row">W</th>
-                    <th col="row">L</th>
-                    <th col="row">D</th>
-                    <th col="row">PT</th>
-                    <th col="row">NRR</th>
-                  </tr>
-                </thead>
-                <tbody className="tbody">
-                  {stats.map(stat => (
-                    <tr key={stat.id}>
-                      <td>{stat.name}</td>
-                      <td>{stat.match}</td>
-                      <td>{stat.won}</td>
-                      <td>{stat.lose}</td>
-                      <td>{stat.draw}</td>
-                      <td>{stat.point_table}</td>
-                      <td>{stat.net_run_rate}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+    return (
+      <Carousel>
+        <Slide right>
+          <div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="pic" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="pic" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="pic" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
             </div>
           </div>
-        </React.Fragment>
-      );
-    }
+        </Slide>
+        <Slide right>
+          <div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="pic" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="pic" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="pic" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </Slide>
+        <Slide right>
+          <div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="pic" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="pic" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="pic" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </Slide>
+      </Carousel>
+    );
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    stats: state.firestore.ordered.stats
-  };
-};
-
-export default compose(
-  connect(mapStateToProps),
-  firestoreConnect([{ collection: "stats" }])
-)(Stats);
+export default Stats;
