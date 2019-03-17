@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/IIITVCricLeague/precache-manifest.4932c20bda98430de30d6e50bd45bb2f.js"
+  "/IIITVCricLeague/precache-manifest.03b12757bfc3078e1ccdd3e77147dd9f.js"
 );
 
 workbox.clientsClaim();
