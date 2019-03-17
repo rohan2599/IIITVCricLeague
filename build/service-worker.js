@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cricleague/precache-manifest.9ed92259a6ba535b5e6e983e0b4aa0fa.js"
+  "/IIITVCricLeague/precache-manifest.4932c20bda98430de30d6e50bd45bb2f.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/cricleague/index.html", {
+workbox.routing.registerNavigationRoute("/IIITVCricLeague/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

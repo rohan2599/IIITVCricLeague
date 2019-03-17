@@ -2,7 +2,7 @@
   "name": "cricket",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://singhshubham98.github.io/cricleague/",
+  "homepage": "https://singhshubham98.github.io/IIITVCricLeague/",
   "dependencies": {
     "bootstrap": "^4.2.1",
     "firebase": "^5.8.0",
