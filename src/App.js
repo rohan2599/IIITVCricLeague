@@ -16,13 +16,13 @@ class App extends Component {
       <BrowserRouter>
         <div>
           {/* <Navbar /> */}
-          <div className="content">
+          <React.Fragment>
             <Route exact path="/" component={Home} />
             <Route exact path="/register" component={ForRegistration} />
             <Route exact path="/register/owner" component={signUpOwner} />
             <Route exact path="/register/player" component={signUpPlayer} />
             <Route exact path="/status" component={Stats} />
-          </div>
+          </React.Fragment>
           {/* <Footer /> */}
         </div>
       </BrowserRouter>
