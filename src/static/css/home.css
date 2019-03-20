@@ -53,3 +53,6 @@
   margin-top: 80vmin;
   background-image: linear-gradient(rgb(233, 233, 233), rgb(233, 233, 233));
 }
+.pointtable {
+  margin-top: 0;
+}

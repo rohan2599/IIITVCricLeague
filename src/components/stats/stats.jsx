@@ -3,7 +3,7 @@ import makeCarousel from "react-reveal/makeCarousel";
 import Slide from "react-reveal/Slide";
 import styled, { css } from "styled-components";
 import "../../static/css/stats.css";
-import img1 from "../../static/image/a1.png";
+import img1 from "../../static/image/pointtable.png";
 
 const width = "100%",
   height = "60vmin";

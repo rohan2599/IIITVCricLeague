@@ -2,12 +2,10 @@
   "name": "cricket",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://singhshubham98.github.io/IIITVCricLeague/",
   "dependencies": {
     "bootstrap": "^4.2.1",
     "firebase": "^5.8.0",
     "font-awesome": "^4.7.0",
-    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^5.1.1",
