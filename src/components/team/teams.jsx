@@ -3,15 +3,14 @@ import makeCarousel from "react-reveal/makeCarousel";
 import Slide from "react-reveal/Slide";
 import styled, { css } from "styled-components";
 import "../../static/css/teams.css";
-import img1 from "../../static/image/a1.png";
+import img1 from "../../static/image/pointtable.png";
 
 const width = "100%",
-  height = "60vmin";
+  height = "65vmin";
 const Container = styled.div`
   position: relative;
   overflow: hidden;
   width: ${width};
-  background-image: linear-gradient(rgb(84, 84, 84), rgb(84, 84, 84));
   text-align: center;
 `;
 const Children = styled.div`
@@ -20,7 +19,8 @@ const Children = styled.div`
   height: ${height};
 `;
 const Arrow = styled.div`
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px #09c0f7;
+  color: #09c0f7;
   z-index: 100;
   line-height: ${height};
   text-align: center;
@@ -42,8 +42,9 @@ const Arrow = styled.div`
 const Dot = styled.span`
   font-size: 1.5em;
   cursor: pointer;
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px 09c0f7;
   user-select: none;
+  padding-bottom: 13em;
 `;
 const Dots = styled.span`
   text-align: center;
@@ -51,7 +52,7 @@ const Dots = styled.span`
   z-index: 100;
 `;
 const Slider1 = ({ position, total, handleClick, children }) => (
-  <Container>
+  <Container className="main--div">
     <div className="cardHeadingTeam--rot">
       TEAM <span>DETAILS</span>
       <div className="cardUnderlineTeam--rot" />
@@ -81,7 +82,7 @@ class Stats extends Component {
     return (
       <Carousel>
         <Slide right>
-          <div>
+          <div className="card--div">
             <div className="player--card">
               <div className="card--image">
                 <img className="pic" src={img1} alt="imgaa" />
@@ -130,7 +131,7 @@ class Stats extends Component {
           </div>
         </Slide>
         <Slide right>
-          <div>
+          <div className="card--div">
             <div className="player--card">
               <div className="card--image">
                 <img className="pic" src={img1} alt="imgaa" />
@@ -179,7 +180,7 @@ class Stats extends Component {
           </div>
         </Slide>
         <Slide right>
-          <div>
+          <div className="card--div">
             <div className="player--card">
               <div className="card--image">
                 <img className="pic" src={img1} alt="imgaa" />

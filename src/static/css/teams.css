@@ -8,18 +8,25 @@
   width: 10vmin;
 }
 
+.main--div {
+  background: linear-gradient(rgba(41, 40, 40, 0.6), rgba(41, 40, 40, 0.6)),
+    url("../image/team_details.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card--div {
+  padding-top: 8vmin;
+  padding-bottom: 8vmin;
+}
+
 .player--card {
   background-image: linear-gradient(rgb(191, 190, 190), rgb(191, 190, 190));
   width: 15%;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-  /* text-align: center; */
   display: inline-block;
-  margin-top: 7vh;
-  margin-right: 2vw;
 }
 .card--details {
-  /* padding: 1vmin; */
   margin-left: 2vw;
   padding-top: 3vh;
 }
@@ -35,7 +42,7 @@
 }
 
 .card--upperline {
-  height: 1px;
+  /* height: 1px; */
   margin-top: 6vh;
   background-color: gray;
   text-align: center;
@@ -45,15 +52,18 @@
 .cardHeadingTeam--rot {
   font-size: 4vmin;
   letter-spacing: 0.3175px;
-  color: black;
+  position: absolute;
+  color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  transform: rotateZ(90deg) translate(8vh, 35vw);
+  transform: rotateZ(90deg);
   z-index: 100;
-  /* margin-top: 3vmin; */
+  margin: 9vh 0 0 8vw;
 }
 .cardUnderlineTeam--rot {
+  position: relative;
   width: 25vh;
-  background-color: gray;
+  background-color: white;
   height: 2px;
-  margin-top: 0;
+  z-index: 100;
+  /* margin-top: 1vmin; */
 }

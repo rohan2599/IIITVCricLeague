@@ -1,5 +1,10 @@
 .contDiv {
-  background-color: black;
+  background: linear-gradient(rgba(41, 40, 40, 0.6), rgba(41, 40, 40, 0.6)),
+    url("../image/team_details.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* float: left; */
 }
 .loading {
   padding: 2.5vmin;
@@ -7,36 +12,54 @@
   margin-left: 45vw;
 }
 
+.heading {
+  margin: 6vh 0 0 13vw;
+}
+
 .thead {
-  color: rgb(234, 164, 60);
+  color: #fff;
+  background-color: #09c0f7;
 }
 
 .tbody {
-  color: white;
+  color: black;
+}
+.tbody tr {
+  background-color: #fff;
 }
 
 .table th,
 td {
-  border: 1px solid #333;
-  padding: 5px;
   text-align: center;
-  display: table-cell;
-  vertical-align: inherit;
 }
 
 .table {
+  margin: 1vh 0 0 10vw;
+  padding: 6vmin;
   border-collapse: collapse;
-  border-spacing: 0;
-  -webkit-border-horizontal-spacing: 0px;
-  -webkit-border-vertical-spacing: 0px;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-variant-east-asian: normal;
+  border-collapse: separate;
+  border-spacing: 0 1vmin;
   font-weight: normal;
   font-stretch: normal;
   font-size: 2vmin;
-  line-height: 1.7;
+  float: left;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.tbody tr:hover {
+  background-color: rgb(235, 232, 232);
+  cursor: pointer;
+}
+
+.pointtableimage {
+  z-index: 90;
+  width: 70%;
+  height: auto;
+  transform: translateY(-5vh);
+  margin-left: 7.5vw;
+}
+
+.underline {
+  background-color: white;
+  width: 42.5vw;
 }
