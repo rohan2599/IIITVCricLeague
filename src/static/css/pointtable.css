@@ -2,9 +2,9 @@
   background: linear-gradient(rgba(41, 40, 40, 0.6), rgba(41, 40, 40, 0.6)),
     url("../image/team_details.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  width: 101.02%;
   background-position: center center;
-  /* float: left; */
+  height: 75vh;
 }
 .loading {
   padding: 2.5vmin;
@@ -13,7 +13,10 @@
 }
 
 .heading {
-  margin: 6vh 0 0 13vw;
+  margin: 6vh 0 0 11vw;
+  font-size: 4vmin;
+  letter-spacing: 0.3175px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .thead {
@@ -34,15 +37,12 @@ td {
 }
 
 .table {
-  margin: 1vh 0 0 10vw;
-  padding: 6vmin;
+  /* margin-left: 8vw;
+  padding: 4vmin 6vmin 6vmin 6vmin; */
   border-collapse: collapse;
   border-collapse: separate;
   border-spacing: 0 1vmin;
-  font-weight: normal;
-  font-stretch: normal;
   font-size: 2vmin;
-  float: left;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -52,14 +52,14 @@ td {
 }
 
 .pointtableimage {
-  z-index: 90;
-  width: 70%;
+  z-index: 100;
+  width: 100%;
   height: auto;
-  transform: translateY(-5vh);
-  margin-left: 7.5vw;
+  transform: translate(-10vmin, -10vmin);
 }
 
 .underline {
   background-color: white;
-  width: 42.5vw;
+  height: 1.7px;
+  margin-top: 1%;
 }

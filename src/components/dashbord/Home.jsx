@@ -6,6 +6,7 @@ import About from "../about/about";
 import Teams from "../team/teams";
 import Stats from "../stats/stats";
 import Pointtable from "../stats/pointtable";
+import Footer from "./footer";
 
 class Home extends Component {
   render() {
@@ -34,6 +35,9 @@ class Home extends Component {
         </div>
         <div className="pointtable">
           <Pointtable />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     );

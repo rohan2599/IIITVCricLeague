@@ -5,17 +5,17 @@ const About = () => {
   return (
     <div className="contAbout">
       <div className="about--image">
-        <div className="heading--rot">
+        <div className="aboutHeading--rot">
           ABOUT THE <span>CRICKET LEAGUE</span>
-          <div className="underline--rot" />
+          <div className="aboutUnderline--rot" />
         </div>
         <img className="kohali" src={image} alt="Kohali" />
       </div>
       <div className="about--details">
         <div className="paragraph">
-          <div className="heading">
+          <div className="heading--about">
             STORY BEHIND STARTING <span>THE LEAGUE</span>
-            <div className="underline" />
+            <div className="underline--about" />
           </div>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
