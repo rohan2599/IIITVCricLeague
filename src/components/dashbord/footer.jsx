@@ -1,7 +1,7 @@
 import React from "react";
 import "../../static/css//footer.css";
 import logo from "../../static/image/logo_cric.png";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer class="page-footer font-small unique-color-dark footer">
@@ -11,18 +11,18 @@ const Footer = () => {
             <h6 class="mb-0">Get connected with us on social networks!</h6>
           </div>
           <div class="col-md-4 col-lg-5 text-center mb-1">
-            <a class="fb-ic">
+            <Link to="#" class="fb-ic icon">
               <i class="fa fa-facebook-f mr-4"> </i>
-            </a>
-            <a class="tw-ic">
+            </Link>
+            <Link to="#" class="tw-ic icon">
               <i class="fa fa-twitter mr-4"> </i>
-            </a>
-            <a class="gplus-ic">
+            </Link>
+            <Link to="#" class="gplus-ic icon">
               <i class="fa fa-google-plus mr-4"> </i>
-            </a>
-            <a class="ins-ic">
+            </Link>
+            <Link to="#" class="ins-ic icon">
               <i class="fa fa-instagram"> </i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -39,13 +39,13 @@ const Footer = () => {
                 style={{ width: "60px" }}
               />
               <p>
-                <a href="#!">About</a>
+                <Link to="#">About</Link>
               </p>
               <p>
-                <a href="#!">Register</a>
+                <Link to="#">Register</Link>
               </p>
               <p>
-                <a href="#!">Login</a>
+                <Link to="#">Login</Link>
               </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -55,16 +55,16 @@ const Footer = () => {
                 style={{ width: "60px" }}
               />
               <p>
-                <a href="#!">Home</a>
+                <Link to="#">Home</Link>
               </p>
               <p>
-                <a href="#!">Teams</a>
+                <Link to="#">Teams</Link>
               </p>
               <p>
-                <a href="#!">Fixtures</a>
+                <Link to="#">Fixtures</Link>
               </p>
               <p>
-                <a href="#!">Contacts</a>
+                <Link to="#">Contacts</Link>
               </p>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

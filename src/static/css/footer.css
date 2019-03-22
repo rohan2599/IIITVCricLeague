@@ -25,6 +25,9 @@
 .mb-1 {
   margin-left: 30vmin;
 }
+.icon {
+  color: white;
+}
 .py-3 {
   background-image: linear-gradient(rgb(227, 224, 224), rgb(230, 227, 227));
 }
