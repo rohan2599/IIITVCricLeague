@@ -10,7 +10,7 @@ const Footer = () => {
           <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
             <h6 class="mb-0">Get connected with us on social networks!</h6>
           </div>
-          <div class="col-md-4 col-lg-5 text-center mb-1">
+          <div class="col-md-6 col-lg-5 offset-md-2 text-center mb-1">
             <Link to="#" class="fb-ic icon">
               <i class="fa fa-facebook-f mr-4"> </i>
             </Link>
@@ -39,13 +39,19 @@ const Footer = () => {
                 style={{ width: "60px" }}
               />
               <p>
-                <Link to="#">About</Link>
+                <Link to="#" className="link">
+                  About
+                </Link>
               </p>
               <p>
-                <Link to="#">Register</Link>
+                <Link to="#" className="link">
+                  Register
+                </Link>
               </p>
               <p>
-                <Link to="#">Login</Link>
+                <Link to="#" className="link">
+                  Login
+                </Link>
               </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -55,16 +61,24 @@ const Footer = () => {
                 style={{ width: "60px" }}
               />
               <p>
-                <Link to="#">Home</Link>
+                <Link to="#" className="link">
+                  Home
+                </Link>
               </p>
               <p>
-                <Link to="#">Teams</Link>
+                <Link to="#" className="link">
+                  Teams
+                </Link>
               </p>
               <p>
-                <Link to="#">Fixtures</Link>
+                <Link to="#" className="link">
+                  Fixtures
+                </Link>
               </p>
               <p>
-                <Link to="#">Contacts</Link>
+                <Link to="#" className="link">
+                  Contacts
+                </Link>
               </p>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

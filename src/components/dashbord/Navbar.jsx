@@ -3,14 +3,44 @@ import logo from "../../static/image/logo_cric.png";
 import "../../static/css/Navbar.css";
 
 class Navbar extends Component {
-  // state = {
-  //   width: 50
-  // };
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggleNavbar;
+
+    if (typeof window !== "undefined") {
+      let prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        const maxScroll = document.body.clientHeight - window.innerHeight;
+        let currentScrollPos = window.pageYOffset;
+        if (
+          (maxScroll > 0 &&
+            prevScrollpos > currentScrollPos &&
+            prevScrollpos <= maxScroll) ||
+          (maxScroll <= 0 && prevScrollpos > currentScrollPos) ||
+          (prevScrollpos <= 0 && currentScrollPos <= 0)
+        ) {
+          document.getElementById("navbar").style.top = "0";
+          document.getElementById("navbar").style.backgroundColor = "black";
+          document.getElementById("navbar").style.zIndex = "1000";
+        } else {
+          document.getElementById("navbar").style.top = "-8.0rem"; // adjustable based your need
+          document.getElementById("logo").style.maxWidth = "46%";
+          document.getElementById("logo").style.marginTop = "-10px";
+        }
+        prevScrollpos = currentScrollPos;
+        if (prevScrollpos === 0) {
+          document.getElementById("logo").style.maxWidth = "100%";
+          document.getElementById("navbar").style.backgroundColor =
+            "transparent";
+        }
+      };
+    }
+  }
 
   render() {
     return (
       <div>
-        <div className="nav">
+        <div id="navbar" className="nav">
           <div className="nav--left">
             <div className="cl">
               <h1>
@@ -20,7 +50,7 @@ class Navbar extends Component {
             <div className="navLeft--underline" />
           </div>
           <div className="nav--logo">
-            <img className="cric--logo" src={logo} alt="Cric logo" />
+            <img className="cric--logo" id="logo" src={logo} alt="Cric logo" />
           </div>
 
           <div className="nav--right">
