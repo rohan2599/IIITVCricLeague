@@ -1,43 +1,63 @@
 import React, { Component } from "react";
-import logo from "../../static/image/logo_cric.png";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from "reactstrap";
 import "../../static/css/Navbar.css";
 
-class Navbar extends Component {
-  // state = {
-  //   width: 50
-  // };
+export default class Navigation extends Component {
+  constructor(props) {
+    super(props);
 
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
     return (
       <div>
-        <div className="nav">
-          <div className="nav--left">
-            <div className="cl">
-              <h1>
-                CRICKET <span>LEAGUE</span>
-              </h1>
-            </div>
-            <div className="navLeft--underline" />
-          </div>
-          <div className="nav--logo">
-            <img className="cric--logo" src={logo} alt="Cric logo" />
-          </div>
-
-          <div className="nav--right">
-            <ul className="navlink">
-              <li>
-                <span>Home</span>
-              </li>
-              <li>Fixtures</li>
-              <li>Register</li>
-              <li>Contact</li>
-            </ul>
-            <div className="navRight--underline" />
-          </div>
-        </div>
+        <Navbar expand="md" className="navDiv">
+          <NavbarBrand className="navbarBrand ml-4" href="/">
+            CRICKET <span>LEAGUE</span>
+          </NavbarBrand>
+          <NavbarToggler className="toggleButton" onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto mt-2" navbar>
+              <NavItem>
+                <NavLink href="/" className="nav-link">
+                  Home
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/" className="nav-link">
+                  Fixtures
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/" className="nav-link">
+                  Register
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/" className="nav-link">
+                  Contact
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
       </div>
     );
   }
 }
-
-export default Navbar;

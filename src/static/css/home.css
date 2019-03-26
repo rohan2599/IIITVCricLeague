@@ -5,23 +5,13 @@
   background-size: cover;
   background-position: center center;
   color: #fff;
-  height: 90vmin;
 }
-
-.frontpageimage {
-  z-index: 90;
-  position: absolute;
-  width: 35%;
-  height: auto;
-  margin-left: 7.5vw;
-  transform: translateY(-2vh);
+.image {
+  z-index: 100;
 }
 
 .flc {
-  margin: 14% 2% 0 45%;
-  position: absolute;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 10vmin;
 }
 
 .flc > span {
@@ -33,9 +23,7 @@
 }
 
 .register--button {
-  position: relative;
   display: inline-block;
-  margin: 1% 3% 0 54%;
   outline: none;
   text-align: center;
   text-decoration: none;
@@ -45,14 +33,197 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   color: #d9eef7;
   border: solid 1px #0076a3;
+
   background: #0095cd;
   letter-spacing: 0.325px;
 }
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
-.about {
-  margin-top: 80vmin;
-  background-image: linear-gradient(rgb(233, 233, 233), rgb(233, 233, 233));
+@media screen and (min-width: 1281px) {
+  .ContDiv {
+    height: 90vh;
+  }
+  .frontpageimage {
+    width: 70%;
+    height: auto;
+    margin-left: 12vw;
+    transform: translateY(-20vh);
+  }
+  .flc {
+    margin-top: 14vh;
+    margin-left: 2.5vw;
+    font-size: 7vmin;
+  }
+  .register--button {
+    margin-left: 16em;
+    padding: 0.3em 1em 0.3em;
+    font-size: 1.5em;
+  }
+  .main {
+    transform: translateY(-14em);
+  }
 }
-.pointtable {
-  margin-top: 0;
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .ContDiv {
+    height: 80vh;
+  }
+  .frontpageimage {
+    width: 65%;
+    height: auto;
+    margin-left: 12vw;
+    transform: translateY(-18vh);
+  }
+  .flc {
+    margin-top: 9vh;
+    margin-left: 2vw;
+    font-size: 7vmin;
+  }
+
+  .register--button {
+    margin-left: 15em;
+    padding: 0.3em 1em 0.3em;
+    font-size: 1em;
+  }
+
+  .main {
+    transform: translateY(-11em);
+  }
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ContDiv {
+    height: 45vh;
+  }
+  .frontpageimage {
+    width: 90%;
+    height: auto;
+    margin-left: 6vw;
+    transform: translateY(-13.5vh);
+  }
+  .flc {
+    margin-top: 4vmin;
+    margin-left: 1vw;
+    font-size: 5vmin;
+  }
+
+  .register--button {
+    margin-left: 13.2em;
+    padding: 0.3em 1em 0.3em;
+    font-size: 1em;
+  }
+
+  .main {
+    transform: translateY(-12em);
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .ContDiv {
+    height: 80vh;
+  }
+  .frontpageimage {
+    width: 72%;
+    height: auto;
+    margin-left: 12vw;
+    transform: translateY(-16vh);
+  }
+  .flc {
+    margin-top: 8vh;
+    margin-left: 2.5vw;
+    font-size: 6vmin;
+  }
+
+  .register--button {
+    margin-left: 12.5em;
+    padding: 0.3em 1em 0.3em;
+    font-size: 1.3em;
+  }
+
+  .main {
+    transform: translateY(-11em);
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .ContDiv {
+    height: 150vh;
+  }
+  .frontpageimage {
+    width: 70%;
+    height: auto;
+    margin-left: 12vw;
+    transform: translateY(-5em);
+  }
+  .flc {
+    margin-top: 10vh;
+    margin-left: 1vw;
+    font-size: 4.5vw;
+  }
+
+  .register--button {
+    margin-left: 9em;
+    padding: 0.3em 1em 0.3em;
+    font-size: 1em;
+  }
+
+  .main {
+    transform: translateY(-7.3em);
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .ContDiv {
+    height: 83vh;
+  }
+  .frontpageimage {
+    width: 80%;
+    height: auto;
+    margin-top: 1em;
+    margin-left: 18vw;
+    transform: translateY(-5em);
+  }
+  .flc {
+    margin-top: -16.5em;
+    margin-left: -31vw;
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .register--button {
+    margin-left: 3em;
+    padding: 0.3em 1em 0.3em;
+    font-size: 0.8em;
+  }
+
+  .main {
+    transform: translateY(-9em);
+  }
 }

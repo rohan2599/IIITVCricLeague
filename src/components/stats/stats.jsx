@@ -48,7 +48,6 @@ const Dot = styled.span`
 const Dots = styled.span`
   text-align: center;
   width: ${width};
-  z-index: 100;
 `;
 const Slider1 = ({ position, total, handleClick, children }) => (
   <Container>
