@@ -1,33 +1,15 @@
 .contAbout {
-  width: 100%;
   color: black;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-.about--image {
-  width: 50%;
-  float: left;
+  background-image: linear-gradient(rgb(233, 233, 233), rgb(233, 233, 233));
 }
 
 .about--details {
-  width: 40%;
-  float: left;
   padding: 0 0 0 5vmin;
 }
 
-.kohali {
-  width: 50%;
-  height: 35%;
-  /* padding-top: 2vmin; */
-  margin-left: 50%;
-}
-
-br {
-  clear: left;
-}
-
 .paragraph {
-  padding-top: 5vmin;
+  /* padding-top: 5vmin; */
   font-size: 2vmin;
   font-weight: 200;
   letter-spacing: 0.3175px;
@@ -62,4 +44,32 @@ span {
   width: 44vh;
   background-color: black;
   height: 1.6px;
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .aboutHeading--rot {
+    display: none;
+  }
+  .aboutUnderline--rot {
+    display: none;
+  }
+  .heading--about {
+    font-size: 4vmin;
+    letter-spacing: 0.3175px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    /* transform: translateX(-80%); */
+  }
+  .kohali {
+    /* margin-top: 6em; */
+    height: auto;
+    width: 20%;
+  }
+  .about--details {
+    /* padding: 0 0 0 5vmin; */
+  }
 }

@@ -3,20 +3,20 @@ import image from "../../static/image/kohali.jpg";
 import "../../static/css/about.css";
 const About = () => {
   return (
-    <div className="contAbout">
-      <div className="about--image">
+    <div className="contAbout row">
+      <div className="about col-xs-4">
         <div className="aboutHeading--rot">
           ABOUT THE <span>CRICKET LEAGUE</span>
-          <div className="aboutUnderline--rot" />
         </div>
+        <div className="aboutUnderline--rot" />
         <img className="kohali" src={image} alt="Kohali" />
       </div>
-      <div className="about--details">
+      <div className="about--details col-xs-4">
         <div className="paragraph">
           <div className="heading--about">
             STORY BEHIND STARTING <span>THE LEAGUE</span>
-            <div className="underline--about" />
           </div>
+          <div className="underline--about" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Dignissimos, odit accusantium at neque beatae a quaerat explicabo
@@ -41,7 +41,6 @@ const About = () => {
           </p>
         </div>
       </div>
-      <br />
     </div>
   );
 };
