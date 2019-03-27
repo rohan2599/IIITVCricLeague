@@ -1,38 +1,21 @@
-.player--card {
-  background-image: linear-gradient(rgb(213, 211, 211), rgb(213, 211, 211));
-  display: inline-block;
-}
-.card--details {
-  margin-left: 2vw;
-  padding-top: 3vh;
+.main-div {
+  background: linear-gradient(rgba(41, 40, 40, 0.6), rgba(41, 40, 40, 0.6)),
+    url("../image/team_details.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.card--details > h6 {
-  font-size: 2.5vmin;
-  text-align: left;
-}
-.card--details > h4 {
-  font-size: 3.5vmin;
-  padding-top: 2vh;
-  text-align: left;
-}
-
-.card--upperline {
-  height: 1px;
-  background-color: gray;
-  text-align: center;
-}
-
-.cardHeading--rot {
+.cardHeading-rot {
   letter-spacing: 0.3175px;
-  color: black;
+  color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  z-index: 100;
 }
-.cardUnderline--rot {
-  background-color: gray;
-  height: 2px;
-  margin-top: 0;
+.cardUnderline-rot {
+  background-color: white;
+  z-index: 100;
 }
+
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
@@ -66,20 +49,20 @@
   .card--upperline {
     margin-top: 4vh;
   }
-  .cardHeading--rot {
+  .cardHeading-rot {
     font-size: 5vmin;
     transform-origin: 12%;
     transform: rotateZ(90deg) translateX(-30vw);
   }
-  .cardUnderline--rot {
+  .cardUnderline-rot {
     width: 20vw;
     height: 1px;
     margin-left: 7.5vw;
     transform-origin: 12%;
     transform: rotateZ(90deg) translateX(-2.5vw);
   }
-  .player--image {
-    width: 50%;
+  .team--image {
+    width: 70%;
   }
 }
 
@@ -93,7 +76,7 @@
     width: 25%;
     padding-top: 2vh;
     padding-bottom: 1vh;
-    margin-top: 3.9vh;
+    margin-top: 5.8vh;
     margin-right: 1vw;
     margin-left: 1vw;
   }
@@ -106,19 +89,16 @@
     padding-top: 3vh;
     text-align: center;
   }
-  .cardHeading--rot {
+  .cardHeading-rot {
     font-size: 5vmin;
     margin: 2vh 0 0 0vw;
   }
-  .cardUnderline--rot {
-    width: 28vw;
+  .cardUnderline-rot {
+    width: 29vw;
     height: 1px;
     margin-left: 35.6vw;
   }
-  .player--image {
+  .team--image {
     width: 18vmin;
-  }
-  .card--upperline {
-    /* margin-top: 6vh; */
   }
 }

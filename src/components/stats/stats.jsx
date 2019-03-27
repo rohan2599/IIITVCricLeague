@@ -53,8 +53,8 @@ const Slider1 = ({ position, total, handleClick, children }) => (
   <Container>
     <div className="cardHeading--rot">
       STATI<span>STICS</span>
-      <div className="cardUnderline--rot" />
     </div>
+    <div className="cardUnderline--rot" />
     <Children>
       {children}
       <Arrow onClick={handleClick} data-position={position - 1}>
@@ -83,7 +83,7 @@ class Stats extends Component {
           <div>
             <div className="player--card">
               <div className="card--image">
-                <img className="pic" src={img1} alt="imgaa" />
+                <img className="player--image" src={img1} alt="imgaa" />
               </div>
               <div className="card--upperline" />
               <div className="card--details">
@@ -98,7 +98,7 @@ class Stats extends Component {
             </div>
             <div className="player--card">
               <div className="card--image">
-                <img className="pic" src={img1} alt="imgaa" />
+                <img className="player--image" src={img1} alt="imgaa" />
               </div>
               <div className="card--upperline" />
               <div className="card--details">
@@ -113,56 +113,7 @@ class Stats extends Component {
             </div>
             <div className="player--card">
               <div className="card--image">
-                <img className="pic" src={img1} alt="imgaa" />
-              </div>
-              <div className="card--upperline" />
-              <div className="card--details">
-                <h6 className="card--heading6">
-                  <span>MATCHES:</span>
-                </h6>
-                <h6>RUNS:</h6>
-                <h4>
-                  Yogendra <span> Jangir</span>
-                </h4>
-              </div>
-            </div>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-            <div className="player--card">
-              <div className="card--image">
-                <img className="pic" src={img1} alt="imgaa" />
-              </div>
-              <div className="card--upperline" />
-              <div className="card--details">
-                <h6 className="card--heading6">
-                  <span>MATCHES:</span>
-                </h6>
-                <h6>RUNS:</h6>
-                <h4>
-                  Yogendra <span> Jangir</span>
-                </h4>
-              </div>
-            </div>
-            <div className="player--card">
-              <div className="card--image">
-                <img className="pic" src={img1} alt="imgaa" />
-              </div>
-              <div className="card--upperline" />
-              <div className="card--details">
-                <h6 className="card--heading6">
-                  <span>MATCHES:</span>
-                </h6>
-                <h6>RUNS:</h6>
-                <h4>
-                  Yogendra <span> Jangir</span>
-                </h4>
-              </div>
-            </div>
-            <div className="player--card">
-              <div className="card--image">
-                <img className="pic" src={img1} alt="imgaa" />
+                <img className="player--image" src={img1} alt="imgaa" />
               </div>
               <div className="card--upperline" />
               <div className="card--details">
@@ -181,7 +132,7 @@ class Stats extends Component {
           <div>
             <div className="player--card">
               <div className="card--image">
-                <img className="pic" src={img1} alt="imgaa" />
+                <img className="player--image" src={img1} alt="imgaa" />
               </div>
               <div className="card--upperline" />
               <div className="card--details">
@@ -196,7 +147,7 @@ class Stats extends Component {
             </div>
             <div className="player--card">
               <div className="card--image">
-                <img className="pic" src={img1} alt="imgaa" />
+                <img className="player--image" src={img1} alt="imgaa" />
               </div>
               <div className="card--upperline" />
               <div className="card--details">
@@ -211,7 +162,56 @@ class Stats extends Component {
             </div>
             <div className="player--card">
               <div className="card--image">
-                <img className="pic" src={img1} alt="imgaa" />
+                <img className="player--image" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </Slide>
+        <Slide right>
+          <div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="player--image" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="player--image" src={img1} alt="imgaa" />
+              </div>
+              <div className="card--upperline" />
+              <div className="card--details">
+                <h6 className="card--heading6">
+                  <span>MATCHES:</span>
+                </h6>
+                <h6>RUNS:</h6>
+                <h4>
+                  Yogendra <span> Jangir</span>
+                </h4>
+              </div>
+            </div>
+            <div className="player--card">
+              <div className="card--image">
+                <img className="player--image" src={img1} alt="imgaa" />
               </div>
               <div className="card--upperline" />
               <div className="card--details">
