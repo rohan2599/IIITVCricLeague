@@ -2,23 +2,20 @@
   background: linear-gradient(rgba(41, 40, 40, 0.6), rgba(41, 40, 40, 0.6)),
     url("../image/team_details.jpg");
   background-repeat: no-repeat;
-  width: 101.02%;
-  background-position: center center;
-  height: 75vh;
+  background-size: cover;
 }
 .loading {
   padding: 2.5vmin;
-  margin-top: 20vh;
-  margin-left: 45vw;
+  text-align: center;
 }
-
+.underline {
+  background-color: white;
+  height: 1px;
+}
 .heading {
-  margin: 6vh 0 0 11vw;
-  font-size: 4vmin;
   letter-spacing: 0.3175px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-
 .thead {
   color: #fff;
   background-color: #09c0f7;
@@ -37,12 +34,11 @@ td {
 }
 
 .table {
-  /* margin-left: 8vw;
-  padding: 4vmin 6vmin 6vmin 6vmin; */
   border-collapse: collapse;
   border-collapse: separate;
   border-spacing: 0 1vmin;
   font-size: 2vmin;
+  letter-spacing: 0.3175px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -57,9 +53,66 @@ td {
   height: auto;
   transform: translate(-10vmin, -10vmin);
 }
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
 
-.underline {
-  background-color: white;
-  height: 1.7px;
-  margin-top: 1%;
+@media (min-width: 481px) and (max-width: 767px) {
+  .cricketer--image {
+    display: none;
+  }
+
+  .heading {
+    font-size: 5vmin;
+    transform-origin: 12%;
+    margin-left: 10vw;
+    transform: rotateZ(90deg) translateX(1.7vw);
+  }
+  .underline {
+    width: 20vw;
+    margin-left: 8vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-1.8vw);
+  }
+
+  .table {
+    font-size: 2.5vmin;
+    margin-left: 2vw;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .cricketer--image {
+    display: none;
+  }
+
+  .loading {
+    padding: 2.5vmin;
+    text-align: center;
+  }
+  .underline {
+    background-color: white;
+    height: 1px;
+    width: 30%;
+    margin-left: 7vw;
+    margin-bottom: 1vh;
+    margin-top: 1%;
+  }
+  .heading {
+    margin: 2vh 0 0 3vw;
+    font-size: 5vmin;
+    letter-spacing: 0.3175px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+
+  .table {
+    font-size: 2.5vmin;
+    margin-left: 2vw;
+  }
 }

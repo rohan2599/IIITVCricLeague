@@ -25,10 +25,22 @@
 .icon {
   color: white;
 }
+
 .py-3 {
   background-image: linear-gradient(rgb(227, 224, 224), rgb(230, 227, 227));
 }
 
 .link {
   color: #09c0f7;
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .mb-0 {
+    display: none;
+  }
 }
