@@ -10,7 +10,13 @@
   background-color: #09c0f7;
   color: #fff;
 }
-
+.svg--icon {
+  width: 17px;
+}
+.header--icon {
+  width: 20px;
+  filter: invert(100%);
+}
 .footer--main {
   background-image: linear-gradient(rgb(232, 232, 232), rgb(232, 232, 232));
   padding: 1vmin;

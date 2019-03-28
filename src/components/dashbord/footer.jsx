@@ -1,6 +1,8 @@
 import React from "react";
 import "../../static/css//footer.css";
 import { Link } from "react-router-dom";
+// import phone from "../../static/icon/phone.svg";
+
 const Footer = () => {
   return (
     <footer className="page-footer font-small unique-color-dark footer">
@@ -10,17 +12,33 @@ const Footer = () => {
             <h6 className="mb-0">Get connected with us on social networks!</h6>
           </div>
           <div className="col-md-6 col-lg-5 text-center mb-1">
-            <Link to="#" className="fb-ic icon">
-              <i className="fa fa-facebook-f mr-4"> </i>
+            <Link to="#">
+              <img
+                className="header--icon mr-4"
+                src={require("../../static/icon/facebook.svg")}
+                alt="phone"
+              />
             </Link>
-            <Link to="#" className="tw-ic icon">
-              <i className="fa fa-twitter mr-4"> </i>
+            <Link to="#">
+              <img
+                className="header--icon mr-4"
+                src={require("../../static/icon/youtube.svg")}
+                alt="phone"
+              />
             </Link>
-            <Link to="#" className="gplus-ic icon">
-              <i className="fa fa-google-plus mr-4"> </i>
+            <Link to="#">
+              <img
+                className="header--icon mr-4"
+                src={require("../../static/icon/twitter.svg")}
+                alt="phone"
+              />
             </Link>
-            <Link to="#" className="ins-ic icon">
-              <i className="fa fa-instagram"> </i>
+            <Link to="#">
+              <img
+                className="header--icon mr-4"
+                src={require("../../static/icon/instagram.svg")}
+                alt="phone"
+              />
             </Link>
           </div>
         </div>
@@ -74,16 +92,36 @@ const Footer = () => {
                 style={{ width: "60px" }}
               />
               <p className="contact--detail">
-                <i className="fa fa-home mr-3" /> PDPU High Rise Hostel
+                <img
+                  className="svg--icon mr-3"
+                  src={require("../../static/icon/home.svg")}
+                  alt="phone"
+                />
+                PDPU High Rise Hostel
               </p>
               <p className="contact--detail">
-                <i className="fa fa-envelope mr-3" /> cricleague@iiitv.ac.in
+                <img
+                  className="svg--icon mr-3"
+                  src={require("../../static/icon/email.svg")}
+                  alt="phone"
+                />
+                cricleague@iiitv.ac.in
               </p>
               <p className="contact--detail">
-                <i className="fa fa-phone mr-3" /> +91 9119637832
+                <img
+                  className="svg--icon mr-3"
+                  src={require("../../static/icon/phone.svg")}
+                  alt="phone"
+                />
+                +91 9119637832
               </p>
               <p className="contact--detail">
-                <i className="fa fa-print mr-3" /> +91 9119637832
+                <img
+                  className="svg--icon mr-3"
+                  src={require("../../static/icon/printer-.svg")}
+                  alt="phone"
+                />
+                +91 9119637832
               </p>
             </div>
           </div>
