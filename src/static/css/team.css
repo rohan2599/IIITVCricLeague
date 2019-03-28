@@ -34,41 +34,38 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .playerCard {
-    width: 20%;
-    height: 48vh;
+    width: 21%;
+    height: 26vh;
     padding-top: 2vh;
     padding-bottom: 1vh;
-    margin-top: 7vh;
+    margin-top: 12vh;
     margin-right: 1vw;
     margin-left: 1vw;
   }
   .card--details {
     margin-left: 2vw;
-    margin-top: 4vh;
+    margin-top: 2vh;
     padding-top: 1vh;
   }
   .card--details > h3 {
-    font-size: 1.3rem;
-    padding-top: 3vh;
+    font-size: 1.6rem;
+    margin-top: 7vh;
     padding-bottom: 2vmin;
     margin-left: -1vw;
     text-align: center;
   }
-
-  .card--upperline {
-    margin-top: 4vh;
-  }
   .cardHeading-rot {
     font-size: 3.5vmin;
     transform-origin: 12%;
+    margin-left: 1vw;
     transform: rotateZ(90deg) translateX(-29vw);
   }
   .cardUnderline-rot {
-    width: 20vw;
+    width: 16.3vh;
     height: 1px;
-    margin-left: 7.5vw;
+    margin-left: 7.9vw;
     transform-origin: 12%;
-    transform: rotateZ(90deg) translateX(-2.5vw);
+    transform: rotateZ(90deg) translateX(-2.6vw);
   }
   .team--image {
     width: 70%;
@@ -83,10 +80,10 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .playerCard {
     width: 20%;
-    height: 48vh;
+    height: 40vh;
     padding-top: 2vh;
     padding-bottom: 1vh;
-    margin-top: 7vh;
+    margin-top: 12vh;
     margin-right: 1vw;
     margin-left: 1vw;
   }
@@ -96,27 +93,24 @@
     padding-top: 1vh;
   }
   .card--details > h3 {
-    font-size: 1.3rem;
-    padding-top: 3vh;
-    padding-bottom: 2vmin;
+    font-size: 1.7rem;
+    margin-top: 6vh;
+    padding-bottom: 1vmin;
     margin-left: -1vw;
     text-align: center;
   }
 
-  .card--upperline {
-    margin-top: 4vh;
-  }
   .cardHeading-rot {
-    font-size: 5vmin;
+    font-size: 3.5vmin;
     transform-origin: 12%;
     transform: rotateZ(90deg) translateX(-30vw);
   }
   .cardUnderline-rot {
-    width: 20vw;
+    width: 23.5vh;
     height: 1px;
-    margin-left: 7.5vw;
+    margin-left: 8vw;
     transform-origin: 12%;
-    transform: rotateZ(90deg) translateX(-2.5vw);
+    transform: rotateZ(90deg) translateX(-1.8vw);
   }
   .team--image {
     width: 70%;
@@ -182,9 +176,6 @@
     text-align: center;
   }
 
-  .card--upperline {
-    margin-top: 4vh;
-  }
   .cardHeading-rot {
     font-size: 5vmin;
     transform-origin: 12%;

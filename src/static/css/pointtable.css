@@ -51,8 +51,34 @@ td {
   z-index: 100;
   width: 100%;
   height: auto;
-  transform: translate(-10vmin, -10vmin);
 }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pointtableimage {
+    width: 95%;
+    margin-left: 2.5vw;
+    margin-top: 2.5vh;
+  }
+  .ContTable {
+    padding: 0 !important;
+  }
+  .underline {
+    width: 99%;
+    margin-left: 9vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+  }
+  .heading {
+    margin: 2vh 0 0 9vw;
+    font-size: 3.5vmin;
+  }
+}
+
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
@@ -91,11 +117,6 @@ td {
   .cricketer--image {
     display: none;
   }
-
-  .loading {
-    padding: 2.5vmin;
-    text-align: center;
-  }
   .underline {
     background-color: white;
     height: 1px;
@@ -107,8 +128,6 @@ td {
   .heading {
     margin: 2vh 0 0 3vw;
     font-size: 5vmin;
-    letter-spacing: 0.3175px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
 
   .table {

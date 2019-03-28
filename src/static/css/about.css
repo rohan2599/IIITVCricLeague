@@ -85,13 +85,13 @@ span {
   .aboutHeading--rot {
     font-size: 3.5vmin;
     transform-origin: 12%;
-    margin-left: 8vw;
+    margin-left: 6vw;
     transform: rotateZ(90deg) translateX(4vw);
   }
   .aboutUnderline--rot {
     width: 31vw;
     height: 1px;
-    margin-left: 7vw;
+    margin-left: 4.7vw;
     transform-origin: 12%;
     transform: rotateZ(90deg) translateX(-0.3vw);
   }

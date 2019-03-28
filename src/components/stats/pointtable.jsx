@@ -19,12 +19,12 @@ class Stats extends Component {
       return (
         <React.Fragment>
           <div className="row contDiv">
-            <div className="table-responsive-md col-md-6 col-sm-12 ">
-              <div className="heading col-sm-3">
+            <div className="table-responsive-md col-md-6 col-sm-12 ContTable ">
+              <div className="heading col-sm-3 col-md-6">
                 POINTS <span>TABLE</span>
               </div>
               <div className="underline" />
-              <table className="table col-md-12 offset-md-2 col-sm-10 offset-sm-2">
+              <table className="table col-md-12 col-sm-10 offset-sm-2">
                 <thead>
                   <tr className="thead">
                     <th>TEAM</th>
@@ -49,7 +49,7 @@ class Stats extends Component {
                 </tbody>
               </table>
             </div>
-            <div className="offset-md-1 col-md-5 cricketer--image">
+            <div className=" col-md-6 cricketer--image">
               <img className="pointtableimage" src={image} alt="Cricketer" />
             </div>
           </div>

@@ -1,20 +1,11 @@
 .player--card {
   background-image: linear-gradient(rgb(213, 211, 211), rgb(213, 211, 211));
   display: inline-block;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
 }
 .card--details {
-  margin-left: 2vw;
-  padding-top: 3vh;
-}
-
-.card--details > h6 {
-  font-size: 2.5vmin;
-  text-align: left;
-}
-.card--details > h4 {
-  font-size: 3.5vmin;
-  padding-top: 2vh;
-  text-align: left;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .card--upperline {
@@ -22,7 +13,6 @@
   background-color: gray;
   text-align: center;
 }
-
 .cardHeading--rot {
   letter-spacing: 0.3175px;
   color: black;
@@ -33,17 +23,66 @@
   height: 2px;
   margin-top: 0;
 }
+
 /* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .player--card {
     width: 20%;
-    height: 48vh;
+    height: 25vh;
+    margin-top: 10vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .card--details {
+    margin-left: 2vw;
+    margin-top: 0;
+    padding-top: 1vh;
+  }
+  .card--details > h6 {
+    font-size: 2vmin;
+    text-align: left;
+  }
+  .card--details > h4 {
+    font-size: 2.5vmin;
     padding-top: 2vh;
-    padding-bottom: 1vh;
+    margin-left: -0.3vw;
+    text-align: left;
+  }
+
+  .card--upperline {
+    margin-top: 3vh;
+  }
+  .cardHeading--rot {
+    font-size: 3.5vmin;
+    transform-origin: 12%;
+    margin-left: 1vw;
+    transform: rotateZ(90deg) translateX(-29.5vw);
+  }
+  .cardUnderline--rot {
+    width: 14.8vh;
+    height: 1px;
+    margin-left: 7.9vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-2.3vh);
+  }
+  .player--image {
+    width: 50%;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .player--card {
+    width: 21%;
+    height: 45vh;
     margin-top: 7vh;
     margin-right: 1vw;
     margin-left: 1vw;
@@ -53,19 +92,62 @@
     margin-top: 4vh;
     padding-top: 1vh;
   }
-  .card--details > h3 {
-    font-size: 1.3rem;
+  .card--details > h6 {
+    font-size: 2.5vmin;
+    text-align: left;
+  }
+  .card--details > h4 {
+    font-size: 3.3vmin;
     padding-top: 3vh;
-    padding-bottom: 2vmin;
-    letter-spacing: 0.3175px;
-    margin-left: -1vw;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    text-align: center;
+    text-align: left;
+  }
+  .cardHeading--rot {
+    font-size: 3.5vmin;
+    transform-origin: 12%;
+
+    transform: rotateZ(90deg) translateX(-31vw);
+  }
+  .cardUnderline--rot {
+    width: 20.5vh;
+    height: 1px;
+    margin-left: 8vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-2.3vw);
+  }
+  .player--image {
+    width: 60%;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .player--card {
+    width: 20%;
+    height: 48vh;
+    margin-top: 7vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .card--details {
+    margin-left: 2vw;
+    margin-top: 4vh;
+    padding-top: 1vh;
+  }
+  .card--details > h6 {
+    font-size: 2.5vmin;
+    text-align: left;
+  }
+  .card--details > h4 {
+    font-size: 3.5vmin;
+    padding-top: 1vh;
+    margin-left: 1vw;
+    text-align: left;
   }
 
-  .card--upperline {
-    margin-top: 4vh;
-  }
   .cardHeading--rot {
     font-size: 5vmin;
     transform-origin: 12%;
@@ -91,8 +173,6 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .player--card {
     width: 25%;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
     margin-top: 3.9vh;
     margin-right: 1vw;
     margin-left: 1vw;
@@ -101,9 +181,14 @@
     margin-left: 2vw;
     padding-top: 1vh;
   }
-  .card--details > h3 {
-    font-size: 4vmin;
-    padding-top: 3vh;
+  .card--details > h6 {
+    font-size: 2.5vmin;
+    text-align: left;
+  }
+  .card--details > h4 {
+    font-size: 3.5vmin;
+    padding-top: 1vh;
+    margin-left: -2.5vw;
     text-align: center;
   }
   .cardHeading--rot {
@@ -117,8 +202,5 @@
   }
   .player--image {
     width: 18vmin;
-  }
-  .card--upperline {
-    /* margin-top: 6vh; */
   }
 }
