@@ -4,25 +4,36 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.playerCard {
+  background-image: linear-gradient(rgb(213, 211, 211), rgb(213, 211, 211));
+  display: inline-block;
+}
 .cardHeading-rot {
   letter-spacing: 0.3175px;
   color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   z-index: 100;
 }
+.heading--about {
+  letter-spacing: 0.3175px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
 .cardUnderline-rot {
   background-color: white;
   z-index: 100;
 }
+.card--details > h3 {
+  letter-spacing: 0.3175px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
 
 /* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-  .player--card {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .playerCard {
     width: 20%;
     height: 48vh;
     padding-top: 2vh;
@@ -40,9 +51,134 @@
     font-size: 1.3rem;
     padding-top: 3vh;
     padding-bottom: 2vmin;
-    letter-spacing: 0.3175px;
     margin-left: -1vw;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+  }
+
+  .card--upperline {
+    margin-top: 4vh;
+  }
+  .cardHeading-rot {
+    font-size: 3.5vmin;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-29vw);
+  }
+  .cardUnderline-rot {
+    width: 20vw;
+    height: 1px;
+    margin-left: 7.5vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-2.5vw);
+  }
+  .team--image {
+    width: 70%;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .playerCard {
+    width: 20%;
+    height: 48vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    margin-top: 7vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .card--details {
+    margin-left: 2vw;
+    margin-top: 4vh;
+    padding-top: 1vh;
+  }
+  .card--details > h3 {
+    font-size: 1.3rem;
+    padding-top: 3vh;
+    padding-bottom: 2vmin;
+    margin-left: -1vw;
+    text-align: center;
+  }
+
+  .card--upperline {
+    margin-top: 4vh;
+  }
+  .cardHeading-rot {
+    font-size: 5vmin;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-30vw);
+  }
+  .cardUnderline-rot {
+    width: 20vw;
+    height: 1px;
+    margin-left: 7.5vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-2.5vw);
+  }
+  .team--image {
+    width: 70%;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .aboutHeading--rot {
+    display: none;
+  }
+  .aboutUnderline--rot {
+    display: none;
+  }
+  .heading--about {
+    font-size: 5.8vmin;
+    margin-left: -0.7em;
+  }
+  .kohali {
+    height: auto;
+    width: 75%;
+    margin-top: 3em;
+    margin-left: 2.5em;
+  }
+  .about--details {
+    padding: 1.5em 0 0 0;
+  }
+  .paragraph {
+    font-size: 3vmin;
+    letter-spacing: 0.3175px;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .playerCard {
+    width: 20%;
+    height: 48vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    margin-top: 7vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .card--details {
+    margin-left: 2vw;
+    margin-top: 4vh;
+    padding-top: 1vh;
+  }
+  .card--details > h3 {
+    font-size: 1.3rem;
+    padding-top: 3vh;
+    padding-bottom: 2vmin;
+    margin-left: -1vw;
     text-align: center;
   }
 
@@ -72,11 +208,11 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .player--card {
+  .playerCard {
     width: 25%;
     padding-top: 2vh;
     padding-bottom: 1vh;
-    margin-top: 5.8vh;
+    margin-top: 7vh;
     margin-right: 1vw;
     margin-left: 1vw;
   }

@@ -83,7 +83,7 @@ class Stats extends Component {
       <Carousel>
         <Slide right>
           <div className="card--div">
-            <div className="player--card">
+            <div className="playerCard">
               <div className="card--image">
                 <img className="team--image" src={img} alt="imgaa" />
               </div>
@@ -93,7 +93,7 @@ class Stats extends Component {
                 </h3>
               </div>
             </div>
-            <div className="player--card">
+            <div className="playerCard">
               <div className="card--image">
                 <img className="team--image" src={img} alt="imgaa" />
               </div>
@@ -103,41 +103,7 @@ class Stats extends Component {
                 </h3>
               </div>
             </div>
-            <div className="player--card">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </Slide>
-        <Slide right>
-          <div className="card--div">
-            <div className="player--card">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-            <div className="player--card">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-            <div className="player--card">
+            <div className="playerCard">
               <div className="card--image">
                 <img className="team--image" src={img} alt="imgaa" />
               </div>
@@ -151,7 +117,7 @@ class Stats extends Component {
         </Slide>
         <Slide right>
           <div className="card--div">
-            <div className="player--card">
+            <div className="playerCard">
               <div className="card--image">
                 <img className="team--image" src={img} alt="imgaa" />
               </div>
@@ -161,7 +127,7 @@ class Stats extends Component {
                 </h3>
               </div>
             </div>
-            <div className="player--card">
+            <div className="playerCard">
               <div className="card--image">
                 <img className="team--image" src={img} alt="imgaa" />
               </div>
@@ -171,7 +137,41 @@ class Stats extends Component {
                 </h3>
               </div>
             </div>
-            <div className="player--card">
+            <div className="playerCard">
+              <div className="card--image">
+                <img className="team--image" src={img} alt="imgaa" />
+              </div>
+              <div className="card--details">
+                <h3>
+                  STEEL <span>WINGS</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </Slide>
+        <Slide right>
+          <div className="card--div">
+            <div className="playerCard">
+              <div className="card--image">
+                <img className="team--image" src={img} alt="imgaa" />
+              </div>
+              <div className="card--details">
+                <h3>
+                  STEEL <span>WINGS</span>
+                </h3>
+              </div>
+            </div>
+            <div className="playerCard">
+              <div className="card--image">
+                <img className="team--image" src={img} alt="imgaa" />
+              </div>
+              <div className="card--details">
+                <h3>
+                  STEEL <span>WINGS</span>
+                </h3>
+              </div>
+            </div>
+            <div className="playerCard">
               <div className="card--image">
                 <img className="team--image" src={img} alt="imgaa" />
               </div>

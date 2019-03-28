@@ -1,6 +1,5 @@
 import React from "react";
 import "../../static/css//footer.css";
-import logo from "../../static/image/logo_cric.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -29,40 +28,25 @@ const Footer = () => {
       <div className="footer--main">
         <div className="container text-center text-md-left mt-1 ">
           <div className="row mt-3">
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <img className="footer--logo" src={logo} alt="Logo" />
+            <div className="col-md-3 col-lg-4 col-xl-3 col-sm-3 col-5 mx-auto mb-4">
+              <img
+                className="footer--logo"
+                src={require("../../static/image/logo_cric.png")}
+                alt="Logo"
+              />
             </div>
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase font-weight-bold">Components</h6>
+
+            <div className="col-md-3 col-lg-2 col-xl-2 col-sm-3 mx-auto mb-4">
+              <h6 className="text-uppercase font-weight-bold link--heading">
+                Useful links
+              </h6>
               <hr
                 className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
                 style={{ width: "60px" }}
               />
-              <p>
-                <Link to="#" className="link">
-                  About
-                </Link>
-              </p>
               <p>
                 <Link to="#" className="link">
                   Register
-                </Link>
-              </p>
-              <p>
-                <Link to="#" className="link">
-                  Login
-                </Link>
-              </p>
-            </div>
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase font-weight-bold">Useful links</h6>
-              <hr
-                className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
-                style={{ width: "60px" }}
-              />
-              <p>
-                <Link to="#" className="link">
-                  Home
                 </Link>
               </p>
               <p>
@@ -77,27 +61,28 @@ const Footer = () => {
               </p>
               <p>
                 <Link to="#" className="link">
-                  Contacts
+                  About
                 </Link>
               </p>
             </div>
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 className="text-uppercase font-weight-bold">Contact</h6>
+            <div className="col-md-4 col-lg-3 col-xl-3 col-sm-5 mx-auto mb-md-0 mb-4">
+              <h6 className="text-uppercase font-weight-bold link--heading">
+                Contact
+              </h6>
               <hr
                 className="accent-2 mb-4 mt-0 d-inline-block mx-auto"
                 style={{ width: "60px" }}
               />
-              <p>
+              <p className="contact--detail">
                 <i className="fa fa-home mr-3" /> PDPU High Rise Hostel
               </p>
-              <p>
-                <i className="fa fa-envelope mr-3" />{" "}
-                cricleague@iiitvadodara.ac.in
+              <p className="contact--detail">
+                <i className="fa fa-envelope mr-3" /> cricleague@iiitv.ac.in
               </p>
-              <p>
+              <p className="contact--detail">
                 <i className="fa fa-phone mr-3" /> +91 9119637832
               </p>
-              <p>
+              <p className="contact--detail">
                 <i className="fa fa-print mr-3" /> +91 9119637832
               </p>
             </div>

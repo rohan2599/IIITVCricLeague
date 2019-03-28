@@ -37,6 +37,86 @@ span {
 }
 
 /* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutHeading--rot {
+    font-size: 3.5vmin;
+    transform-origin: 12%;
+    margin-left: 6vw;
+    transform: rotateZ(90deg) translateX(4vw);
+  }
+  .aboutUnderline--rot {
+    width: 41vw;
+    height: 1px;
+    margin-left: 3.6vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-0.3vw);
+  }
+  .heading--about {
+    font-size: 3.5vmin;
+    margin-left: -0.7em;
+    letter-spacing: 0.3175px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .kohali {
+    height: auto;
+    width: 50%;
+    margin-top: 4em;
+    margin-left: 10em;
+  }
+  .about--details {
+    padding: 1.5em 0 0 0;
+  }
+  .paragraph {
+    font-size: 1.8vmin;
+    letter-spacing: 0.3175px;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .aboutHeading--rot {
+    font-size: 3.5vmin;
+    transform-origin: 12%;
+    margin-left: 8vw;
+    transform: rotateZ(90deg) translateX(4vw);
+  }
+  .aboutUnderline--rot {
+    width: 31vw;
+    height: 1px;
+    margin-left: 7vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-0.3vw);
+  }
+  .heading--about {
+    font-size: 4vmin;
+    margin-left: -0.5em;
+    letter-spacing: 0.3175px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .kohali {
+    height: auto;
+    width: 40%;
+    margin-top: 2em;
+    margin-left: 15em;
+  }
+  .about--details {
+    padding: 1.5em 0 0 0;
+  }
+  .paragraph {
+    font-size: 2vmin;
+    letter-spacing: 0.3175px;
+  }
+}
+
+/* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */

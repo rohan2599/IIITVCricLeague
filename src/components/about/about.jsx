@@ -5,14 +5,14 @@ const About = () => {
   return (
     <div className="container-fluid">
       <div className="contAbout row">
-        <div className="about col-sm-5 col-5">
+        <div className="about  col-md-6 col-sm-6 col-5">
           <div className="aboutHeading--rot">
             ABOUT THE <span>CRICKET LEAGUE</span>
           </div>
           <div className="aboutUnderline--rot" />
           <img className="kohali" src={image} alt="Kohali" />
         </div>
-        <div className="about--details col-sm-7 col-7">
+        <div className="about--details col-md-6 col-sm-6 col-7">
           <div className="paragraph">
             <div className="heading--about col-11 col-sm-12">
               STORY BEHIND STARTING <span>THE LEAGUE</span>

@@ -31,9 +31,42 @@
 }
 
 .link {
-  color: #09c0f7;
+  color: black;
+}
+.link--heading {
+  color: black;
+}
+p {
+  color: black;
 }
 
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 480px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer--logo {
+    width: 70%;
+    margin-top: 12vh;
+  }
+  .container {
+    max-width: 100% !important;
+  }
+  .link--heading {
+    font-size: 4.5vmin;
+  }
+  .link {
+    font-size: 4.4vmin;
+  }
+  .mb-0 {
+    display: none;
+  }
+  .contact--detail {
+    text-align: left;
+    margin-left: 2.5vw;
+  }
+}
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
