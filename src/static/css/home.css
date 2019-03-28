@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Impact";
+  src: url(../../fonts/impact.ttf);
+}
 .ContDiv {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../image/coverphoto1.jpg");
