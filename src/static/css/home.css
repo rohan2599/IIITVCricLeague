@@ -84,13 +84,13 @@
     transform: translateY(-18vh);
   }
   .flc {
-    margin-top: 9vh;
-    margin-left: 2vw;
-    font-size: 7vmin;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    font-size: 5.5vmin;
   }
 
   .register--button {
-    margin-left: 15em;
+    margin-left: 17em;
     padding: 0.3em 1em 0.3em;
     font-size: 1em;
   }
@@ -202,7 +202,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .ContDiv {
-    height: 83vh;
+    height: 100vh;
   }
   .frontpageimage {
     width: 80%;
@@ -219,7 +219,7 @@
   }
 
   .register--button {
-    margin-left: 3em;
+    margin-left: 2em;
     padding: 0.3em 1em 0.3em;
     font-size: 0.8em;
   }
