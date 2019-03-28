@@ -1,7 +1,6 @@
 import React from "react";
 import "../../static/css//footer.css";
 import { Link } from "react-router-dom";
-// import phone from "../../static/icon/phone.svg";
 
 const Footer = () => {
   return (
