@@ -10,7 +10,13 @@
   background-color: #09c0f7;
   color: #fff;
 }
-
+.svg--icon {
+  width: 17px;
+}
+.header--icon {
+  width: 20px;
+  filter: invert(100%);
+}
 .footer--main {
   background-image: linear-gradient(rgb(232, 232, 232), rgb(232, 232, 232));
   padding: 1vmin;
@@ -25,10 +31,55 @@
 .icon {
   color: white;
 }
+
 .py-3 {
   background-image: linear-gradient(rgb(227, 224, 224), rgb(230, 227, 227));
 }
 
 .link {
-  color: #09c0f7;
+  color: black;
+}
+.link--heading {
+  color: black;
+}
+p {
+  color: black;
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 480px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer--logo {
+    width: 70%;
+    margin-top: 12vh;
+  }
+  .container {
+    max-width: 100% !important;
+  }
+  .link--heading {
+    font-size: 4.5vmin;
+  }
+  .link {
+    font-size: 4.4vmin;
+  }
+  .mb-0 {
+    display: none;
+  }
+  .contact--detail {
+    text-align: left;
+    margin-left: 2.5vw;
+  }
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .mb-0 {
+    display: none;
+  }
 }

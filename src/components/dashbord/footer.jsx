@@ -1,7 +1,7 @@
 import React from "react";
 import "../../static/css//footer.css";
-import logo from "../../static/image/logo_cric.png";
 import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="page-footer font-small unique-color-dark footer">
@@ -10,18 +10,34 @@ const Footer = () => {
           <div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
             <h6 className="mb-0">Get connected with us on social networks!</h6>
           </div>
-          <div className="col-md-6 col-lg-5 offset-md-2 text-center mb-1">
-            <Link to="#" className="fb-ic icon">
-              <i className="fa fa-facebook-f mr-4"> </i>
+          <div className="col-md-6 col-lg-5 text-center mb-1">
+            <Link to="#">
+              <img
+                className="header--icon mr-4"
+                src={require("../../static/icon/facebook.svg")}
+                alt="phone"
+              />
             </Link>
-            <Link to="#" className="tw-ic icon">
-              <i className="fa fa-twitter mr-4"> </i>
+            <Link to="#">
+              <img
+                className="header--icon mr-4"
+                src={require("../../static/icon/youtube.svg")}
+                alt="phone"
+              />
             </Link>
-            <Link to="#" className="gplus-ic icon">
-              <i className="fa fa-google-plus mr-4"> </i>
+            <Link to="#">
+              <img
+                className="header--icon mr-4"
+                src={require("../../static/icon/twitter.svg")}
+                alt="phone"
+              />
             </Link>
-            <Link to="#" className="ins-ic icon">
-              <i className="fa fa-instagram"> </i>
+            <Link to="#">
+              <img
+                className="header--icon mr-4"
+                src={require("../../static/icon/instagram.svg")}
+                alt="phone"
+              />
             </Link>
           </div>
         </div>
@@ -29,40 +45,25 @@ const Footer = () => {
       <div className="footer--main">
         <div className="container text-center text-md-left mt-1 ">
           <div className="row mt-3">
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <img className="footer--logo" src={logo} alt="Logo" />
+            <div className="col-md-3 col-lg-4 col-xl-3 col-sm-3 col-5 mx-auto mb-4">
+              <img
+                className="footer--logo"
+                src={require("../../static/image/logo_cric.png")}
+                alt="Logo"
+              />
             </div>
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase font-weight-bold">Components</h6>
+
+            <div className="col-md-3 col-lg-2 col-xl-2 col-sm-3 mx-auto mb-4">
+              <h6 className="text-uppercase font-weight-bold link--heading">
+                Useful links
+              </h6>
               <hr
                 className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
                 style={{ width: "60px" }}
               />
-              <p>
-                <Link to="#" className="link">
-                  About
-                </Link>
-              </p>
               <p>
                 <Link to="#" className="link">
                   Register
-                </Link>
-              </p>
-              <p>
-                <Link to="#" className="link">
-                  Login
-                </Link>
-              </p>
-            </div>
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase font-weight-bold">Useful links</h6>
-              <hr
-                className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
-                style={{ width: "60px" }}
-              />
-              <p>
-                <Link to="#" className="link">
-                  Home
                 </Link>
               </p>
               <p>
@@ -77,35 +78,56 @@ const Footer = () => {
               </p>
               <p>
                 <Link to="#" className="link">
-                  Contacts
+                  About
                 </Link>
               </p>
             </div>
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 className="text-uppercase font-weight-bold">Contact</h6>
+            <div className="col-md-4 col-lg-3 col-xl-3 col-sm-5 mx-auto mb-md-0 mb-4">
+              <h6 className="text-uppercase font-weight-bold link--heading">
+                Contact
+              </h6>
               <hr
                 className="accent-2 mb-4 mt-0 d-inline-block mx-auto"
                 style={{ width: "60px" }}
               />
-              <p>
-                <i className="fa fa-home mr-3" /> PDPU High Rise Hostel
+              <p className="contact--detail">
+                <img
+                  className="svg--icon mr-3"
+                  src={require("../../static/icon/home.svg")}
+                  alt="phone"
+                />
+                PDPU High Rise Hostel
               </p>
-              <p>
-                <i className="fa fa-envelope mr-3" />{" "}
-                cricleague@iiitvadodara.ac.in
+              <p className="contact--detail">
+                <img
+                  className="svg--icon mr-3"
+                  src={require("../../static/icon/email.svg")}
+                  alt="phone"
+                />
+                cricleague@iiitv.ac.in
               </p>
-              <p>
-                <i className="fa fa-phone mr-3" /> +91 9119637832
+              <p className="contact--detail">
+                <img
+                  className="svg--icon mr-3"
+                  src={require("../../static/icon/phone.svg")}
+                  alt="phone"
+                />
+                +91 9119637832
               </p>
-              <p>
-                <i className="fa fa-print mr-3" /> +91 9119637832
+              <p className="contact--detail">
+                <img
+                  className="svg--icon mr-3"
+                  src={require("../../static/icon/printer-.svg")}
+                  alt="phone"
+                />
+                +91 9119637832
               </p>
             </div>
           </div>
         </div>
 
         <div className="footer-copyright text-center py-3">
-          © 2018 Copyright: Shubham Singh
+          © 2019 Copyright: Shubham Singh
         </div>
       </div>
     </footer>
