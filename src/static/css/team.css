@@ -1,6 +1,6 @@
 .main-div {
   background: linear-gradient(rgba(41, 40, 40, 0.6), rgba(41, 40, 40, 0.6)),
-    url("../image/team_details.jpg");
+    url("../image/team_detail.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
