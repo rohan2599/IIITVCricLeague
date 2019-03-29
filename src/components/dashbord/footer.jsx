@@ -22,21 +22,21 @@ const Footer = () => {
               <img
                 className="header--icon mr-4"
                 src={require("../../static/icon/youtube.svg")}
-                alt="phone"
+                alt="youtube"
               />
             </Link>
             <Link to="#">
               <img
                 className="header--icon mr-4"
                 src={require("../../static/icon/twitter.svg")}
-                alt="phone"
+                alt="twitter"
               />
             </Link>
             <Link to="#">
               <img
                 className="header--icon mr-4"
                 src={require("../../static/icon/instagram.svg")}
-                alt="phone"
+                alt="instagram"
               />
             </Link>
           </div>
