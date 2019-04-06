@@ -8,7 +8,7 @@ IIITV Cricket League Website
 </p>
 <hr>
 <h4 align="center"> Website for CricLeague powered by
-<img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" width="40" align="center">
+<img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" width="40" align="center"> & 
 <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png" width="40" align="center"></h4>
 
 ### Development 🔧
