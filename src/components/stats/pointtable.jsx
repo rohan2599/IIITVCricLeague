@@ -8,7 +8,7 @@ import image from "../../static/image/pointtable.png";
 class Stats extends Component {
   render() {
     const { stats } = this.props;
-    // console.log("stats", stats);
+    console.log("stats", stats);
     if (!stats) {
       return (
         <div className="loading">

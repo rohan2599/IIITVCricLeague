@@ -7,7 +7,7 @@ import Teams from "../team/teams";
 import Stats from "../stats/stats";
 import Pointtable from "../stats/pointtable";
 import Footer from "./footer";
-
+import { Link } from "react-router-dom";
 class Home extends Component {
   render() {
     return (
@@ -23,7 +23,9 @@ class Home extends Component {
             <p className="flc">
               FIRST LOVE <span>CRICKET</span>
             </p>
-            <button className="register--button">Register</button>
+            <button className="register--button">
+              <Link to="/register">Register</Link>
+            </button>
           </div>
         </div>
         <div className="main">
