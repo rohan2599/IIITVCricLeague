@@ -65,9 +65,10 @@ span {
   }
   .kohali {
     height: auto;
-    width: 50%;
-    margin-top: 3.3em;
-    margin-left: 15em;
+    width: 40%;
+    margin-top: 2em;
+    padding-bottom: 2vmin;
+    margin-left: 16em;
   }
   .about--details {
     padding: 2em;
@@ -111,9 +112,9 @@ span {
   }
   .kohali {
     height: auto;
-    width: 50%;
-    margin-top: 3em;
-    margin-left: 15em;
+    width: 40%;
+    margin-top: 2em;
+    margin-left: 16em;
   }
   .about--details {
     padding: 2em;
