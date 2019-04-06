@@ -54,11 +54,88 @@ td {
 }
 
 /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media screen and (min-width: 1281px) {
+  .pointtableimage {
+    width: 80%;
+    margin-left: 4vw;
+  }
+  .ContTable {
+    padding: 0 !important;
+  }
+  .underline {
+    width: 95.5%;
+    margin-left: 9.5vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+  }
+  .heading {
+    margin: 2vh 0 0 9vw;
+    font-size: 3.5vmin;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media screen and (min-width: 1025px) and (max-width: 1281px) {
+  .pointtableimage {
+    width: 90%;
+    margin-left: 2.5vw;
+    margin-top: 2.5vh;
+  }
+  .ContTable {
+    padding: 0 !important;
+  }
+  .underline {
+    width: 95%;
+    margin-left: 9vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+  }
+  .heading {
+    margin: 2vh 0 0 9vw;
+    font-size: 3.5vmin;
+  }
+}
+
+/* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pointtableimage {
+    width: 95%;
+    margin-left: 2.5vw;
+    margin-top: 2.5vh;
+  }
+  .ContTable {
+    padding: 0 !important;
+  }
+  .underline {
+    width: 99%;
+    margin-left: 9vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+  }
+  .heading {
+    margin: 2vh 0 0 9vw;
+    font-size: 3.5vmin;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .pointtableimage {
     width: 95%;
     margin-left: 2.5vw;

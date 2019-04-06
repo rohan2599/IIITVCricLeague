@@ -7,6 +7,8 @@
 .playerCard {
   background-image: linear-gradient(rgb(213, 211, 211), rgb(213, 211, 211));
   display: inline-block;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
 }
 .cardHeading-rot {
   letter-spacing: 0.3175px;
@@ -28,6 +30,82 @@
 }
 
 /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media screen and (min-width: 1281px) {
+  .playerCard {
+    width: 17%;
+    height: 40vh;
+    margin-top: 12vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+
+  .card--details > h3 {
+    font-size: 1.7rem;
+    margin-top: 3.5vh;
+    margin-left: -1vw;
+    text-align: center;
+  }
+
+  .cardHeading-rot {
+    font-size: 3.5vmin;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-31vw);
+  }
+  .cardUnderline-rot {
+    width: 27.5vh;
+    height: 1px;
+    margin-left: 8vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-1.3vw);
+  }
+  .team--image {
+    width: 60%;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media screen and (min-width: 1025px) and (max-width: 1281px) {
+  .playerCard {
+    width: 17%;
+    height: 40vh;
+    margin-top: 12vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+
+  .card--details > h3 {
+    font-size: 1.7rem;
+    margin-top: 3.5vh;
+    margin-left: -1vw;
+    text-align: center;
+  }
+
+  .cardHeading-rot {
+    font-size: 3.5vmin;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-31vw);
+  }
+  .cardUnderline-rot {
+    width: 27.5vh;
+    height: 1px;
+    margin-left: 8vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-1.3vw);
+  }
+  .team--image {
+    width: 60%;
+  }
+}
+
+/* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
@@ -36,8 +114,7 @@
   .playerCard {
     width: 21%;
     height: 26vh;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+
     margin-top: 12vh;
     margin-right: 1vw;
     margin-left: 1vw;
@@ -81,8 +158,7 @@
   .playerCard {
     width: 20%;
     height: 40vh;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+
     margin-top: 12vh;
     margin-right: 1vw;
     margin-left: 1vw;
@@ -157,8 +233,7 @@
   .playerCard {
     width: 20%;
     height: 48vh;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+
     margin-top: 7vh;
     margin-right: 1vw;
     margin-left: 1vw;
@@ -201,8 +276,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .playerCard {
     width: 25%;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+
     margin-top: 7vh;
     margin-right: 1vw;
     margin-left: 1vw;

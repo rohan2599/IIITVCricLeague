@@ -25,6 +25,102 @@
 }
 
 /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media screen and (min-width: 1281px) {
+  .player--card {
+    width: 17%;
+    height: 45vh;
+    margin-top: 7vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .card--upperline {
+    margin-top: 2.5vmin;
+    height: 2px;
+  }
+  .card--details {
+    margin-left: 2vw;
+    margin-top: 4vh;
+    padding-top: 1vh;
+  }
+  .card--details > h6 {
+    font-size: 2.5vmin;
+    text-align: left;
+  }
+  .card--details > h4 {
+    font-size: 3.3vmin;
+    padding-top: 3vh;
+    text-align: left;
+  }
+  .cardHeading--rot {
+    font-size: 3.5vmin;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-31vw);
+  }
+  .cardUnderline--rot {
+    width: 27.5vh;
+    height: 1.2px;
+    margin-left: 8vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-1.5vw);
+  }
+  .player--image {
+    width: 50%;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media screen and (min-width: 1025px) and (max-width: 1281px) {
+  .player--card {
+    width: 21%;
+    height: 45vh;
+    margin-top: 7vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .card--upperline {
+    margin-top: 2vmin;
+  }
+  .card--details {
+    margin-left: 2vw;
+    margin-top: 4vh;
+    padding-top: 1vh;
+  }
+  .card--details > h6 {
+    font-size: 2.5vmin;
+    text-align: left;
+  }
+  .card--details > h4 {
+    font-size: 3.3vmin;
+    padding-top: 3vh;
+    text-align: left;
+  }
+  .cardHeading--rot {
+    font-size: 3.5vmin;
+    transform-origin: 12%;
+
+    transform: rotateZ(90deg) translateX(-31vw);
+  }
+  .cardUnderline--rot {
+    width: 20.5vh;
+    height: 1px;
+    margin-left: 8vw;
+    transform-origin: 12%;
+    transform: rotateZ(90deg) translateX(-2.3vw);
+  }
+  .player--image {
+    width: 60%;
+  }
+}
+
+/* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */

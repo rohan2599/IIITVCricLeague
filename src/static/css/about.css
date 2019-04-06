@@ -45,14 +45,14 @@ span {
     font-size: 3.5vmin;
     transform-origin: 12%;
     margin-left: 6vw;
-    transform: rotateZ(90deg) translateX(4vw);
+    transform: rotateZ(90deg) translateX(6.5vw);
   }
   .aboutUnderline--rot {
-    width: 25.3vw;
+    width: 24vw;
     height: 1px;
     margin-left: 5.7vw;
     transform-origin: 12%;
-    transform: rotateZ(90deg) translateX(-0.3vw);
+    transform: rotateZ(90deg) translateX(0.1vw);
   }
   .underline--about {
     width: 85%;
