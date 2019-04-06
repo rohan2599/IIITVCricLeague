@@ -5,7 +5,7 @@ import Navigation from "./Navbar";
 import About from "../about/about";
 import Teams from "../team/teams";
 import Stats from "../stats/stats";
-import Pointtable from "../stats/pointtable";
+import PointTable from "../stats/pointtable";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
 class Home extends Component {
@@ -35,7 +35,7 @@ class Home extends Component {
 
           <Stats />
 
-          <Pointtable />
+          <PointTable />
 
           <Footer />
         </div>

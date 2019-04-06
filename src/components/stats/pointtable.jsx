@@ -5,7 +5,8 @@ import { connect } from "react-redux";
 import "../../static/css/pointtable.css";
 import loader from "../../static/image/loading.gif";
 import image from "../../static/image/pointtable.png";
-class Stats extends Component {
+
+class PointTable extends Component {
   render() {
     const { stats } = this.props;
     console.log("stats", stats);
@@ -68,4 +69,4 @@ const mapStateToProps = state => {
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([{ collection: "stats" }])
-)(Stats);
+)(PointTable);
