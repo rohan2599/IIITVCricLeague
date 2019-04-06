@@ -1,6 +1,4 @@
-IIITV Cricket League Website
-
-<p align="center"><img src="public/favicon.ico" align="center" width="180"></p>
+<p align="center"><img src="public/favicon.ico" align="center" width="110"></p>
 <h1 align="center">IIITV Cricket League</h1>
 
 <h4 align="center"> Website for CricLeague powered by
