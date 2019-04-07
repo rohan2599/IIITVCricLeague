@@ -62,7 +62,7 @@ const Footer = () => {
                 style={{ width: "60px" }}
               />
               <p>
-                <Link to="#" className="link">
+                <Link to="/register" className="link">
                   Register
                 </Link>
               </p>
@@ -77,8 +77,8 @@ const Footer = () => {
                 </Link>
               </p>
               <p>
-                <Link to="#" className="link">
-                  About
+                <Link to="/result" className="link">
+                  Results
                 </Link>
               </p>
             </div>
@@ -92,7 +92,7 @@ const Footer = () => {
               />
               <p className="contact--detail">
                 <img
-                  className="svg--icon mr-3"
+                  className="svg--icon mr-1"
                   src={require("../../static/icon/home.svg")}
                   alt="phone"
                 />

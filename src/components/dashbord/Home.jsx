@@ -3,11 +3,11 @@ import "../../static/css/home.css";
 import image from "../../static/image/frontpageimage.png";
 import Navigation from "./Navbar";
 import About from "../about/about";
-import Teams from "../team/teams";
+import Team from "../team/teams";
 import Stats from "../stats/stats";
-import Pointtable from "../stats/pointtable";
+import PointTable from "../stats/pointtable";
 import Footer from "./footer";
-
+import { Link } from "react-router-dom";
 class Home extends Component {
   render() {
     return (
@@ -23,17 +23,19 @@ class Home extends Component {
             <p className="flc">
               FIRST LOVE <span>CRICKET</span>
             </p>
-            <button className="register--button">Register</button>
+            <button className="register--button">
+              <Link to="/register">Register</Link>
+            </button>
           </div>
         </div>
         <div className="main">
           <About />
 
-          <Teams />
+          <Team />
 
           <Stats />
 
-          <Pointtable />
+          <PointTable />
 
           <Footer />
         </div>

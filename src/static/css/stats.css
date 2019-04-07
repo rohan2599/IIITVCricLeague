@@ -53,7 +53,8 @@
   .card--details > h4 {
     font-size: 3.3vmin;
     padding-top: 3vh;
-    text-align: left;
+    text-align: center;
+    margin-left: -2vw;
   }
   .cardHeading--rot {
     font-size: 3.5vmin;

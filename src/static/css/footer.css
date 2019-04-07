@@ -39,6 +39,9 @@
 .link {
   color: black;
 }
+.link:hover {
+  text-decoration: none;
+}
 .link--heading {
   color: black;
 }

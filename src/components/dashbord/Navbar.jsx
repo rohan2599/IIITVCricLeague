@@ -45,13 +45,13 @@ export default class Navigation extends Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/" className="nav-link">
+                <NavLink href="/register" className="nav-link">
                   Register
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/" className="nav-link">
-                  Contact
+                  Results
                 </NavLink>
               </NavItem>
             </Nav>

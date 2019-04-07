@@ -37,6 +37,17 @@
   background: #0095cd;
   letter-spacing: 0.325px;
 }
+.register--button > a {
+  color: #fff;
+}
+.register--button > a:hover {
+  color: #0095cd;
+  text-decoration: none;
+}
+.register--button:hover {
+  background: #fff;
+}
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops

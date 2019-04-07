@@ -1,9 +1,17 @@
+/*
+ *  Developed by: Shubham Singh
+ */
+
 import React, { Component } from "react";
 import makeCarousel from "react-reveal/makeCarousel";
 import Slide from "react-reveal/Slide";
 import styled, { css } from "styled-components";
 import "../../static/css/team.css";
-import img from "../../static/image/pointtable.png";
+import loader from "../../static/image/loading.gif";
+import TeamCard from "./team_card";
+import { firestoreConnect } from "react-redux-firebase";
+import { compose } from "redux";
+import { connect } from "react-redux";
 
 const width = "100%",
   height = "65vmin";
@@ -77,115 +85,59 @@ const Slider = ({ position, total, handleClick, children }) => (
 );
 const Carousel = makeCarousel(Slider);
 
-class Stats extends Component {
+class Team extends Component {
+  getTeamsCards = team => {
+    var arrays = [],
+      size = 3;
+
+    while (team.length > 0) arrays.push(team.splice(0, size));
+
+    let cardArray = [];
+    if (arrays) {
+      for (let i = 0; i < arrays.length; i++) {
+        cardArray.push(<TeamCard key={i} cardData={arrays[i]} />);
+        console.log(arrays[i]);
+      }
+    }
+    return cardArray;
+  };
   render() {
-    return (
-      <Carousel>
-        <Slide right>
-          <div className="card--div">
-            <div className="playerCard">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
+    const { team } = this.props;
+
+    if (!team) {
+      return (
+        <div className="loading">
+          <img src={loader} alt="loading..." />
+        </div>
+      );
+    } else {
+      // console.log(team);
+
+      return (
+        <Carousel>
+          <Slide right>
+            <div className="card--div">
+              {this.getTeamsCards(team.splice(0, 3))}
             </div>
-            <div className="playerCard">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
+          </Slide>
+          <Slide right>
+            <div className="card--div">
+              {this.getTeamsCards(team.splice(0, 3))}
             </div>
-            <div className="playerCard">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </Slide>
-        <Slide right>
-          <div className="card--div">
-            <div className="playerCard">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-            <div className="playerCard">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-            <div className="playerCard">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </Slide>
-        <Slide right>
-          <div className="card--div">
-            <div className="playerCard">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-            <div className="playerCard">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-            <div className="playerCard">
-              <div className="card--image">
-                <img className="team--image" src={img} alt="imgaa" />
-              </div>
-              <div className="card--details">
-                <h3>
-                  STEEL <span>WINGS</span>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </Slide>
-      </Carousel>
-    );
+          </Slide>
+        </Carousel>
+      );
+    }
   }
 }
 
-export default Stats;
+const mapStateToProps = state => {
+  return {
+    team: state.firestore.ordered.team_detail
+  };
+};
+
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([{ collection: "team_detail" }])
+)(Team);

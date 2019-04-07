@@ -112,7 +112,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .playerCard {
-    width: 21%;
+    width: 22%;
     height: 26vh;
 
     margin-top: 12vh;
@@ -125,7 +125,7 @@
     padding-top: 1vh;
   }
   .card--details > h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 7vh;
     padding-bottom: 2vmin;
     margin-left: -1vw;
@@ -276,7 +276,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .playerCard {
     width: 25%;
-
+    height: 21vh;
     margin-top: 7vh;
     margin-right: 1vw;
     margin-left: 1vw;
@@ -286,7 +286,7 @@
     padding-top: 1vh;
   }
   .card--details > h3 {
-    font-size: 4vmin;
+    font-size: 3vmin;
     padding-top: 3vh;
     text-align: center;
   }
