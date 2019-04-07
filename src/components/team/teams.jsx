@@ -7,7 +7,6 @@ import makeCarousel from "react-reveal/makeCarousel";
 import Slide from "react-reveal/Slide";
 import styled, { css } from "styled-components";
 import "../../static/css/team.css";
-import img from "../../static/image/pointtable.png";
 import loader from "../../static/image/loading.gif";
 import TeamCard from "./team_card";
 import { firestoreConnect } from "react-redux-firebase";
