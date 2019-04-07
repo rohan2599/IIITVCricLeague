@@ -4,7 +4,6 @@ import Home from "./components/dashbord/Home";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import Register from "./components/auth/register";
-import About from "./components/about/about";
 
 class App extends Component {
   render() {
@@ -13,7 +12,6 @@ class App extends Component {
         <React.Fragment>
           <Route exact path="/" component={Home} />
           <Route exact path="/register" component={Register} />
-          {/* <Route exact path="/result" component={About} /> */}
         </React.Fragment>
       </BrowserRouter>
     );
