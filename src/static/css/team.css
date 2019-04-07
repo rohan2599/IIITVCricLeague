@@ -276,7 +276,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .playerCard {
     width: 25%;
-
+    height: 21vh;
     margin-top: 7vh;
     margin-right: 1vw;
     margin-left: 1vw;
