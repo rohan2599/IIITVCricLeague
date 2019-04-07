@@ -1,3 +1,7 @@
+/*
+ *  Developed by: Shubham Singh
+ */
+
 import React, { Component } from "react";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
@@ -9,7 +13,7 @@ import image from "../../static/image/pointtable.png";
 class PointTable extends Component {
   render() {
     const { stats } = this.props;
-    console.log("stats", stats);
+    // console.log("stats", stats);
     if (!stats) {
       return (
         <div className="loading">

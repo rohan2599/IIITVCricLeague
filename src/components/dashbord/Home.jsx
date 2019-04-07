@@ -3,7 +3,7 @@ import "../../static/css/home.css";
 import image from "../../static/image/frontpageimage.png";
 import Navigation from "./Navbar";
 import About from "../about/about";
-import Teams from "../team/teams";
+import Team from "../team/teams";
 import Stats from "../stats/stats";
 import PointTable from "../stats/pointtable";
 import Footer from "./footer";
@@ -31,7 +31,7 @@ class Home extends Component {
         <div className="main">
           <About />
 
-          <Teams />
+          <Team />
 
           <Stats />
 

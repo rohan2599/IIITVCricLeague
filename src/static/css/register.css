@@ -1,23 +1,81 @@
-.container {
-  margin-top: 10%;
+.teamDiv {
+  background: linear-gradient(rgba(41, 40, 40, 0.6), rgba(41, 40, 40, 0.6)),
+    url("../image/team_detail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+.formWrapper {
+  padding: 3vmin;
+  background-image: linear-gradient(
+    rgba(34, 33, 33, 0.6),
+    rgba(23, 21, 21, 0.6)
+  );
+
+  text-align: center !important;
+}
+
+.h4 {
+  color: #0095cd !important;
+}
 .button {
-  display: inline-block;
-  margin: 20% 0% 20% 25%;
-  outline: none;
-  text-align: center;
-
-  font: 14px/100% Arial, Helvetica, sans-serif;
-  padding: 0.5em 2em 0.55em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 0.5em;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-
-  border: solid 1px #0076a3;
-  background: #0095cd;
+  background-color: #0095cd !important;
+  color: #fff !important;
+  padding: 1vh 2vw !important;
 }
-.link_decoration {
-  text-decoration: none !important;
-  color: #d9eef7;
+
+.button:hover {
+  cursor: pointer;
+  background-color: #fff !important;
+  color: #0095cd !important;
+  padding: 1vh 2vw !important;
+}
+
+.registerImage {
+  width: 60%;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .registerImage {
+    width: 95%;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .registerImage {
+    width: 80%;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .registerImage {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .registerImage {
+    display: none;
+  }
 }
