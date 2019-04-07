@@ -88,14 +88,18 @@ const Carousel = makeCarousel(Slider);
 
 class Team extends Component {
   getTeamsCards = team => {
+    var arrays = [],
+      size = 3;
+
+    while (team.length > 0) arrays.push(team.splice(0, size));
+
     let cardArray = [];
-    if (team) {
-      for (let i = 0; i < team.length; i++) {
-        cardArray.push(<TeamCard key={i} cardData={team[i]} />);
-        console.log(team[i]);
+    if (arrays) {
+      for (let i = 0; i < arrays.length; i++) {
+        cardArray.push(<TeamCard key={i} cardData={arrays[i]} />);
+        console.log(arrays[i]);
       }
     }
-
     return cardArray;
   };
   render() {
@@ -113,7 +117,14 @@ class Team extends Component {
       return (
         <Carousel>
           <Slide right>
-            <div className="card--div">{this.getTeamsCards(team)}</div>
+            <div className="card--div">
+              {this.getTeamsCards(team.splice(0, 3))}
+            </div>
+          </Slide>
+          <Slide right>
+            <div className="card--div">
+              {this.getTeamsCards(team.splice(0, 3))}
+            </div>
           </Slide>
         </Carousel>
       );
