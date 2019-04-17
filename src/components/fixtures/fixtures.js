@@ -73,7 +73,7 @@ class Fixture extends Component {
                                 alt="Icon"
                               />
                             </div>
-                            <h4>{fixture.sec_team} </h4>
+                            <h4 className="secondTeam">{fixture.sec_team} </h4>
                           </div>
                         </div>
                       </div>
