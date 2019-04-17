@@ -1,5 +1,5 @@
 <p align="center"><img src="public/favicon.ico" align="center" width="110"></p>
-<h1 align="center">IIITV Cricket League</h1>
+<h1 align="center">IIITV Cricket League :cricket:</h1>
 
 <h4 align="center"> Website for CricLeague powered by
 <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" width="40" align="center"> &

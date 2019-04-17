@@ -13,7 +13,6 @@ import "../../static/css/Navbar.css";
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false
@@ -40,7 +39,7 @@ export default class Navigation extends Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/" className="nav-link">
+                <NavLink href="/fixtures" className="nav-link">
                   Fixtures
                 </NavLink>
               </NavItem>
