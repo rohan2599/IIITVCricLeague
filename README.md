@@ -1,7 +1,7 @@
 <p align="center"><img src="public/favicon.ico" align="center" width="110"></p>
 <h1 align="center">IIITV Cricket League :cricket:</h1>
 
-<h4 align="center"> Website for CricLeague powered by
+<h4 align="center"> Website for Cricket League powered by
 <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" width="40" align="center"> &
 <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png" width="40" align="center"></h4>
 
