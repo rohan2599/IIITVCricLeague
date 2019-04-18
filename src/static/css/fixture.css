@@ -44,19 +44,6 @@
   text-decoration: none !important;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  h1.heading {
-    font-size: 3.55em;
-  }
-  .content h4 {
-    padding: 3.3vh 0;
-  }
-  .card {
-    width: 50vw;
-    height: 35vh;
-    margin: 8vmin auto;
-  }
-}
 @media (min-width: 760px) {
   h1.heading {
     font-size: 3.05em;
@@ -95,5 +82,19 @@
   }
   .content h4 {
     padding: 3.3vh 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+  .content h4 {
+    padding: 3.3vh 0;
+  }
+  .card {
+    width: 50vw;
+    height: 35vh;
+    margin: 5vmin auto;
   }
 }
