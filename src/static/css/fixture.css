@@ -1,0 +1,100 @@
+.fixtureDiv {
+  background: linear-gradient(rgba(41, 40, 40, 0.6), rgba(41, 40, 40, 0.6)),
+    url("../image/team_detail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.loading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background-image: linear-gradient(rgb(213, 211, 211), rgb(213, 211, 211));
+  display: inline-block;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border-radius: 0px !important;
+  transition: box-shadow 0.25s;
+}
+.card:hover {
+  box-shadow: 0 8px 18px 0 rgba(210, 210, 210, 0.2),
+    0 6px 20px 0 rgba(174, 174, 174, 0.19);
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+.card-title {
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+  .card {
+    width: 20vw;
+    height: 23vh;
+    margin: 8vmin auto;
+  }
+  .versus {
+    text-align: center;
+    margin: 2px auto;
+  }
+  .content h4 {
+    padding: 1vh 0;
+    min-height: 7vh;
+  }
+  .secondTeam {
+    margin-top: 20px;
+    padding-bottom: 1vh;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+  .card {
+    width: 15vw;
+    height: 35vh;
+    margin: 10vmin;
+  }
+  .versus {
+    text-align: center;
+    margin: 12px auto;
+  }
+  .content h4 {
+    padding: 3.3vh 0;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 640px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+  .content h4 {
+    padding: 3.3vh 0;
+  }
+  .card {
+    width: 50vw;
+    height: 35vh;
+    margin: 5vmin auto;
+  }
+}
